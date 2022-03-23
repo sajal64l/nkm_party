@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'nkm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'nagarik_unmuktiparty',
+        'NAME': 'nagrik_unmuktiparty',
         'USER': 'nagarik_unmukti_party',
         'PASSWORD': 'password',
     }

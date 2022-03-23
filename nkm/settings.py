@@ -91,6 +91,7 @@ DATABASES = {
         'USER': 'nagarik_unmukti_party',
         'PASSWORD': 'password',
         'HOST':'localhost',
+        'PORT':'',
     }
 }
 

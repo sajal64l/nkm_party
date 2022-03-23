@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': 'nagarik_unmuktiparty',
         'USER': 'nagarik_unmukti_party',
         'PASSWORD': 'password',
-        'HOST':'34.133.191.207',
+        'HOST':'localhost',
     }
 }
 

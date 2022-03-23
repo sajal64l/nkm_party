@@ -1,0 +1,227 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% block title %}
+    <title></title>
+    {% endblock %}
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}">
+
+    <!-- plugin scripts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700,800,900%7CLibre+Baskerville:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/potisen-icons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vegas.min.css' %}">
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    <style>
+        .lang-active {
+            color: #fff !important;
+            background-color: #d41E44 !important;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="{% static 'images/loader.png' %}" class="preloader__image" alt="">
+    </div><!-- /.preloader -->
+    <div class="page-wrapper">
+        <div class="topbar-one">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="topbar-one__left">
+                        <a href="mailto:nagarikunmuktiparty@gmail.com">nagarikunmuktiparty@gmail.com</a>
+                        <a href="tel:9851249954">{% trans "9851249954" %}</a>
+                    </div><!-- /.topbar-one__left -->
+                    <div class="topbar-one__right">
+                        <a href="{% url 'donation' %}"><i class="fa fa-money"></i>{% trans "Donate Now" %}</a>
+                        <a href="{% url 'member' %}"><i class="fa fa-user-o"></i>{% trans "Join Us" %}</a>
+                    </div><!-- /.topbar-one__right -->
+                </div><!-- /.inner-container -->
+            </div><!-- /.container -->
+        </div><!-- /.topbar-one -->
+        <header class="site-header site-header__header-one ">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box clearfix">
+                        <a class="navbar-brand" href="{% url 'index' %}">
+                            <img src="{% static 'images/logo-dark.png' %}" class="main-logo" width="177" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box">
+                            <!-- class="current" -->
+                            <li>
+                                <a href="{% url 'index' %}">{% trans "Home" %}</a>
+                            </li>
+                            <li>
+                                <a href="#">{% trans "About Us" %}</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{% url 'about' %}">{% trans "About Us" %}</a></li>
+                                    <li><a href="{% url 'history' %}">{% trans "History" %}</a></li>
+                                </ul><!-- /.sub-menu -->
+                            </li>
+                            <li>
+                                <a href="#">{% trans "Contribute" %}</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{% url 'donation' %}">{% trans "Donations" %}</a></li>
+                                    <li><a href="{% url 'member' %}">{% trans "Member" %}</a></li>
+                                </ul><!-- /.sub-menu -->
+                            </li>
+                            <li>
+                                <a href="{% url 'notice:post_list' %}">{% trans "Notice" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'contact' %}">{% trans "Contact" %}</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                  
+                    {% get_current_language as CURRENT_LANGUAGE %}
+                    {% get_available_languages as AVAILABLE_LANGUAGES %}
+                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                        
+                    <div class="right-side-box">
+                        <div class="header-social">
+                            <div class="mr-2">{% trans "Language :" %}</div>
+                            
+                                {% for language in languages %} 
+                                
+                                    <a href="/{{ language.code }}/" style="width: 50px;"
+                                    {% if language.code == CURRENT_LANGUAGE %} class="lang-active"{% endif %}>
+                                    {{ language.name_local }}
+                                    </a>
+                                {% endfor %}
+                        </div><!-- /.header-social -->
+                    </div><!-- /.right-side-box -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+
+        {% block content %}
+        {% endblock %}
+
+        <footer class="site-footer">
+            <div class="site-footer__logo text-center">
+                <a href="{% url 'index' %}"><img src="{% static 'images/logo-light.png' %}" alt="" width="174"></a>
+            </div><!-- /.site-footer__logo -->
+            <div class="site-footer__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget">
+                                <h3 class="footer-widget__title">{% trans "About" %}</h3><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">Lorem ipsum is simply dolor sit ametcn <br> sectetur adipiscing
+                                    elit.
+                                    Phasellus vehic <br> sagittis euismod.</p><!-- /.footer-widget__text -->
+                                <div class="footer-widget__social">
+                                    <a href="#" class="fa fa-twitter"></a><!-- /.fa fa-twitter -->
+                                    <a href="#" class="fa fa-facebook-square"></a><!-- /.fa fa-facebook-square -->
+                                    <a href="#" class="fa fa-pinterest-p"></a><!-- /.fa fa-pinterest-p -->
+                                    <a href="#" class="fa fa-instagram"></a><!-- /.fa fa-instagram -->
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget footer-widget__links">
+                                <h3 class="footer-widget__title">{% trans " Explore" %}</h3><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links-list">
+                                    <li><a href="{% url 'about' %}">{% trans " About" %}</a></li>
+                                    <li><a href="{% url 'member' %}">{% trans " Member" %}</a></li>
+                                    <li><a href="{% url 'donation' %}">{% trans "Donation" %}</a></li>
+                                    <li><a href="{% url 'member' %}">{% trans "Join Our Community" %}</a></li>
+                                    <li><a href="#">{% trans "Latest News" %}</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links-list -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget footer-widget__contact">
+                                <h3 class="footer-widget__title">{% trans "Contact" %}</h3><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__contact-list">
+                                    <li>
+                                        <i class="potisen-icon-phone"></i><!-- /. -->
+                                        <a href="tel:666-888-000">{% trans "666 888 000" %}</a>
+                                    </li>
+                                    <li>
+                                        <i class="potisen-icon-mail"></i><!-- /. -->
+                                        <a href="mailto:needhelp@example.com">needhelp@example.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="potisen-icon-pin"></i><!-- /. -->
+                                        {% trans "22 Broklyn Street 30 Road. New " %}<br>{% trans " York United States" %}
+                                    </li>
+                                </ul><!-- /.list-unstyled footer-widget__post-list -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="inner-container text-center">
+                        <p class="site-footer__copy">&copy; {% trans " copyright 2022 by " %}<a href="htpps://www.ditnepal.com">ditnepal.com</a></p>
+                        <!-- /.site-footer__copy -->
+                    </div><!-- /.inner-container -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div><!-- /.page-wrapper -->
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/typed-2.0.11.js' %}"></script>
+    <script src="{% static 'js/vegas.min.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'js/countdown.min.js' %}"></script>
+
+    <!-- template scripts -->
+    <script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+{% load notice_tags %}
+{% load i18n %}
+<div class="col-lg-4">
+    <div class="sidebar">
+        <div class="sidebar__single sidebar__search">
+            <h3 class="sidebar__title">{% trans 'Search' %}</h3><!-- /.sidebar__title -->
+            <form role="search" method="get" class="sidebar__search-form">
+                <input type="text" name="search" placeholder="{% trans 'Search here...' %}">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div><!-- /.sidebar__single -->
+        <div class="sidebar__single sidebar__post">
+            <h3 class="sidebar__title">{% trans 'Latest Notices' %}</h3><!-- /.sidebar__title -->
+            <div class="sidebar__post-wrap">
+                {% for s in latest_posts %}  
+                <div class="sidebar__post__single">
+                    <div class="sidebar__post-image">
+                        <div class="inner-block"><img src="{{ s.image.url }}" alt="Awesome Image" /></div>
+                        <!-- /.inner-block -->
+                    </div><!-- /.sidebar__post-image -->
+                    <div class="sidebar__post-content">
+                        <h4 class="sidebar__post-title"><a href="{{ s.get_absolute_url }}">{{ s.title }}</a></h4>
+                        <!-- /.sidebar__post-title -->
+                    </div><!-- /.sidebar__post-content -->
+                </div>
+                {% endfor %}
+
+                <div class="sidebar__post__single">
+                    
+                </div><!-- /.sidebar__post__single -->
+                
+            </div><!-- /.sidebar__post-wrap -->
+        </div><!-- /.sidebar__single -->
+        
+        <div class="sidebar__single sidebar__tags">
+            <h3 class="sidebar__title">{% trans 'Tags' %}</h3><!-- /.sidebar__title -->
+            <ul class="sidebar__tags-list">
+                {% for tag in tag_list %}
+                <li class="sidebar__tags-list-item"><a href="{% url 'notice:post_list_by_tag' tag.slug %}">{{tag.name|capfirst}}</a></li>
+                {% endfor %}
+            </ul><!-- /.sidebar__category-list -->
+        </div><!-- /.sidebar__single -->
+    </div><!-- /.sidebar -->
+</div><!-- /.col-lg-4 -->

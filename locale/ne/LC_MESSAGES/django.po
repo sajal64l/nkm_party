@@ -1,0 +1,765 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-23 04:42+0545\n"
+"PO-Revision-Date: 2022-03-16 18:25+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: flipbook/cms_apps.py:7
+msgid "Flipbook"
+msgstr "पुस्तक पाठक"
+
+#: frontend/models.py:6 frontend/models.py:75
+msgid "image"
+msgstr "फोटो"
+
+#: frontend/models.py:7 frontend/models.py:21
+msgid "date"
+msgstr "मिति"
+
+#: frontend/models.py:10 frontend/models.py:23 notice/models.py:35
+msgid "title"
+msgstr "शीर्षक"
+
+#: frontend/models.py:11
+msgid "description"
+msgstr "विवरण"
+
+#: frontend/models.py:15 frontend/models.py:16
+msgid "history"
+msgstr "इतिहास"
+
+#: frontend/models.py:24
+msgid "leader"
+msgstr "नेता"
+
+#: frontend/models.py:28 frontend/models.py:29
+msgid "speech"
+msgstr "भाषण"
+
+#: frontend/models.py:33
+msgid "question"
+msgstr "प्रश्न"
+
+#: frontend/models.py:34
+msgid "answer"
+msgstr "जवाफ"
+
+#: frontend/models.py:38
+msgid "Frequently Asked Question"
+msgstr "बारम्बार सोधिने प्रश्न"
+
+#: frontend/models.py:39
+msgid "Frequently Asked Questions"
+msgstr "बारम्बार सोधिने प्रश्नहरू"
+
+#: frontend/models.py:44
+msgid "male"
+msgstr "पुरुष"
+
+#: frontend/models.py:44
+msgid "Male"
+msgstr "पुरुष"
+
+#: frontend/models.py:45
+msgid "female"
+msgstr "महिला"
+
+#: frontend/models.py:45
+msgid "Female"
+msgstr "महिला"
+
+#: frontend/models.py:48
+msgid "married"
+msgstr "विवाहित"
+
+#: frontend/models.py:48
+msgid "Married"
+msgstr "विवाहित"
+
+#: frontend/models.py:49
+msgid "unmarried"
+msgstr "अविवाहित"
+
+#: frontend/models.py:49
+msgid "Unmarried"
+msgstr "अविवाहित"
+
+#: frontend/models.py:52
+msgid "full name"
+msgstr "पुरा नाम"
+
+#: frontend/models.py:53
+msgid "citizenship district"
+msgstr "नागरिकता लिएको जिल्ला"
+
+#: frontend/models.py:54
+msgid "citizenship number"
+msgstr "नागरिकता नम्बर"
+
+#: frontend/models.py:55
+msgid "voterlist number"
+msgstr "मतदाता सूची नम्बर"
+
+#: frontend/models.py:56
+msgid "gender"
+msgstr "लिङ्ग"
+
+#: frontend/models.py:57
+msgid "date of birth"
+msgstr "जन्म मिति"
+
+#: frontend/models.py:58
+msgid "permanent address"
+msgstr "स्थाई ठेगाना"
+
+#: frontend/models.py:59
+msgid "temporary address"
+msgstr "अस्थायी ठेगाना"
+
+#: frontend/models.py:60
+msgid "marriage status"
+msgstr "विवाह स्थिति"
+
+#: frontend/models.py:61
+msgid "number of family members"
+msgstr "परिवारका सदस्यहरूको संख्या"
+
+#: frontend/models.py:62
+msgid "education"
+msgstr "शिक्षा"
+
+#: frontend/models.py:63
+msgid "caste"
+msgstr "जात"
+
+#: frontend/models.py:64
+msgid "occupation"
+msgstr "पेशा"
+
+#: frontend/models.py:65
+msgid "contact number"
+msgstr "सम्पर्क नम्बर"
+
+#: frontend/models.py:66
+msgid "email address"
+msgstr "इ - मेल ठेगाना"
+
+#: frontend/models.py:67
+msgid "reason for being member"
+msgstr "सदस्य हुनुको कारण"
+
+#: frontend/models.py:71 frontend/models.py:72
+msgid "member"
+msgstr "सदस्य"
+
+#: frontend/models.py:78
+msgid "gallery"
+msgstr "तस्बिर संग्रहालय"
+
+#: frontend/models.py:79
+msgid "gallerys"
+msgstr "तस्बिर संग्रहालय"
+
+#: frontend/templates/base.html:60 frontend/templates/frontend/contact.html:37
+msgid "9851249954"
+msgstr "९८५१२४९९५४ "
+
+#: frontend/templates/base.html:63
+msgid "Donate Now"
+msgstr "दान गर्नुहोस्"
+
+#: frontend/templates/base.html:64
+msgid "Join Us"
+msgstr "सामेल हुनुहोस्"
+
+#: frontend/templates/base.html:86 frontend/templates/frontend/about.html:15
+#: frontend/templates/frontend/contact.html:15
+#: frontend/templates/frontend/donation.html:15
+#: frontend/templates/frontend/history.html:15
+#: frontend/templates/frontend/index.html:6
+#: frontend/templates/frontend/member.html:15
+#: notice/templates/notice/post/detail.html:38
+#: notice/templates/notice/post/list.html:27
+msgid "Home"
+msgstr "घर"
+
+#: frontend/templates/base.html:89 frontend/templates/base.html:91
+#: frontend/templates/frontend/about.html:6
+msgid "About Us"
+msgstr "हाम्रो बारेमा"
+
+#: frontend/templates/base.html:92 frontend/templates/frontend/history.html:6
+#: frontend/templates/frontend/history.html:13
+#: frontend/templates/frontend/history.html:17
+msgid "History"
+msgstr "इतिहास"
+
+#: frontend/templates/base.html:96 frontend/templates/frontend/donation.html:16
+#: frontend/templates/frontend/member.html:16
+msgid "Contribute"
+msgstr "योगदान गर्नुहोस्"
+
+#: frontend/templates/base.html:98
+msgid "Donations"
+msgstr "दान"
+
+#: frontend/templates/base.html:99 frontend/templates/frontend/member.html:6
+#: frontend/templates/frontend/member.html:13
+#: frontend/templates/frontend/member.html:17
+msgid "Member"
+msgstr "सदस्य"
+
+#: frontend/templates/base.html:103 notice/templates/notice/post/detail.html:39
+#: notice/templates/notice/post/list.html:7
+#: notice/templates/notice/post/list.html:23
+#: notice/templates/notice/post/list.html:28
+msgid "Notice"
+msgstr "सूचना"
+
+#: frontend/templates/base.html:106 frontend/templates/base.html:172
+#: frontend/templates/frontend/contact.html:6
+#: frontend/templates/frontend/contact.html:13
+#: frontend/templates/frontend/contact.html:16
+msgid "Contact"
+msgstr "सम्पर्क गर्नुहोस्"
+
+#: frontend/templates/base.html:117
+msgid "Language :"
+msgstr "भाषा :"
+
+#: frontend/templates/base.html:145 frontend/templates/frontend/about.html:13
+#: frontend/templates/frontend/about.html:16
+#: frontend/templates/frontend/history.html:16
+msgid "About"
+msgstr "हाम्रो बारेमा"
+
+#: frontend/templates/base.html:159
+msgid " Explore"
+msgstr "अन्वेषण गर्नुहोस्"
+
+#: frontend/templates/base.html:161
+msgid " About"
+msgstr "हाम्रो बारेमा"
+
+#: frontend/templates/base.html:162
+msgid " Member"
+msgstr "सदस्य"
+
+#: frontend/templates/base.html:163 frontend/templates/frontend/donation.html:6
+#: frontend/templates/frontend/donation.html:13
+#: frontend/templates/frontend/donation.html:17
+msgid "Donation"
+msgstr "दान"
+
+#: frontend/templates/base.html:164
+msgid "Join Our Community"
+msgstr "हाम्रो समुदायमा सामेल हुनुहोस्"
+
+#: frontend/templates/base.html:165
+msgid "Latest News"
+msgstr "नवीनतम समाचार"
+
+#: frontend/templates/base.html:176
+msgid "666 888 000"
+msgstr "६६६ ८८८ ०००"
+
+#: frontend/templates/base.html:184
+msgid "22 Broklyn Street 30 Road. New "
+msgstr "22 ब्रोक्लिन स्ट्रीट 30 रोड। नयाँ"
+
+#: frontend/templates/base.html:184
+msgid " York United States"
+msgstr "योर्क संयुक्त राज्य अमेरिका"
+
+#: frontend/templates/base.html:195
+msgid " copyright 2022 by "
+msgstr "प्रतिलिपि अधिकार २०२२ द्वारा"
+
+#: frontend/templates/frontend/about.html:33
+#: frontend/templates/frontend/index.html:135
+msgid "About Nagarik Unmukti Party"
+msgstr "नागरिक उन्मुक्ति पार्टीको बारेमा "
+
+#: frontend/templates/frontend/about.html:34
+msgid "Get to Know Nagarik Unmukti Party"
+msgstr "नागरिक उन्मुक्ति पार्टीलाई चिन्नुहोस्"
+
+#: frontend/templates/frontend/about.html:36
+#: frontend/templates/frontend/index.html:24
+#: frontend/templates/frontend/index.html:152
+#: frontend/templates/frontend/index.html:248
+msgid ""
+"At the heart of the theory and practice is our belief that citizens should "
+"participate in the political process"
+msgstr ""
+"सिद्धान्त र व्यवहारको केन्द्रविन्दुमा नागरिक राजनीतिक प्रक्रियामा सहभागी हुनुपर्छ भन्ने "
+"हाम्रो मान्यता हो"
+
+#: frontend/templates/frontend/about.html:44
+msgid "Join Campaigns"
+msgstr "अभियानहरूमा सामेल हुनुहोस्"
+
+#: frontend/templates/frontend/about.html:45
+#: frontend/templates/frontend/index.html:236
+msgid "We Will Make <br> History Together"
+msgstr "हामी सँगै इतिहास रच्नेछौं"
+
+#: frontend/templates/frontend/about.html:61
+#: frontend/templates/frontend/index.html:40
+#: frontend/templates/frontend/index.html:106
+msgid "To not keep our voices steady. Let's shake hands"
+msgstr "हाम्रो आवाज र मलमान्येतालै स्थिर राख्नन। आउनुहोस हतमेला गरौ। "
+
+#: frontend/templates/frontend/about.html:104
+#: frontend/templates/frontend/index.html:161
+msgid "Join the Fight for Freedom"
+msgstr "स्वतन्त्रताको लडाइमा सामेल हुनुहोस्"
+
+#: frontend/templates/frontend/about.html:105
+#: frontend/templates/frontend/index.html:162
+msgid "Help us Bring <br> the Change we Need"
+msgstr "हामीलाई चाहिने परिवर्तन <br> ल्याउन मद्दत गर्नुहोस्"
+
+#: frontend/templates/frontend/about.html:106
+#: frontend/templates/frontend/index.html:163
+msgid "Become a Member"
+msgstr "सदस्य बन्नुहोस्"
+
+#: frontend/templates/frontend/about.html:145
+msgid "Our Party People"
+msgstr "हाम्रो पार्टीका जनता"
+
+#: frontend/templates/frontend/about.html:146
+msgid "Meet the Team"
+msgstr "टोलीलाई भेट्नुहोस्"
+
+#: frontend/templates/frontend/about.html:206
+#: frontend/templates/frontend/history.html:57
+#: frontend/templates/frontend/member.html:74
+msgid "Let's make a difference! Donate our campaign."
+msgstr "फरक पारौं! हाम्रो अभियानमा दान गर्नुहोस्।"
+
+#: frontend/templates/frontend/about.html:208
+#: frontend/templates/frontend/history.html:59
+#: frontend/templates/frontend/index.html:26
+#: frontend/templates/frontend/index.html:42
+#: frontend/templates/frontend/index.html:58
+#: frontend/templates/frontend/member.html:76
+msgid "Discover More"
+msgstr "थप पत्ता लगाउनुहोस्"
+
+#: frontend/templates/frontend/contact.html:29
+msgid "22 Broklyn Street, USA"
+msgstr "22 ब्रोक्लिन स्ट्रीट 30 रोड"
+
+#: frontend/templates/frontend/contact.html:57
+msgid "Contact With Us"
+msgstr "सम्पर्क गर्नुहोस्"
+
+#: frontend/templates/frontend/contact.html:58
+msgid "Leave a Message"
+msgstr "सन्देश छोड्नुहोस"
+
+#: frontend/templates/frontend/contact.html:63
+#: notice/templates/notice/post/detail.html:131
+msgid "Your Name"
+msgstr "तपाइको नाम"
+
+#: frontend/templates/frontend/contact.html:66
+#: frontend/templates/frontend/donation.html:68
+msgid "Email Address"
+msgstr "इ - मेल ठेगाना"
+
+#: frontend/templates/frontend/contact.html:69
+msgid "Write Message"
+msgstr "सन्देश लेख्नुहोस्"
+
+#: frontend/templates/frontend/contact.html:71
+msgid "Send Message"
+msgstr "सन्देश लेख्नुहोस्"
+
+#: frontend/templates/frontend/donation.html:26
+#: frontend/templates/frontend/donation.html:38
+msgid "Payment Info"
+msgstr "भुक्तानी जानकारी"
+
+#: frontend/templates/frontend/donation.html:29
+msgid "Rs"
+msgstr "रु"
+
+#: frontend/templates/frontend/donation.html:43
+msgid "Online Payment"
+msgstr "अनलाइन भुक्तानी"
+
+#: frontend/templates/frontend/donation.html:47
+msgid "Offline Payment"
+msgstr "अफलाइन भुक्तानी"
+
+#: frontend/templates/frontend/donation.html:50
+msgid "Recurrence"
+msgstr "पुनरावृत्ति"
+
+#: frontend/templates/frontend/donation.html:51
+msgid "Monthly"
+msgstr "मासिक"
+
+#: frontend/templates/frontend/donation.html:52
+msgid "Yearly"
+msgstr "वार्षिक"
+
+#: frontend/templates/frontend/donation.html:59
+msgid "Personal Info"
+msgstr "व्यक्तिगत जानकारी"
+
+#: frontend/templates/frontend/donation.html:62
+msgid "First Name"
+msgstr "पहिलो नाम"
+
+#: frontend/templates/frontend/donation.html:65
+msgid "Last Name"
+msgstr "थर"
+
+#: frontend/templates/frontend/donation.html:71
+msgid "Phone"
+msgstr "फोन"
+
+#: frontend/templates/frontend/donation.html:74
+msgid "Address"
+msgstr "ठेगाना"
+
+#: frontend/templates/frontend/donation.html:78
+msgid "Nepal"
+msgstr "नेपाल"
+
+#: frontend/templates/frontend/donation.html:79
+msgid "India"
+msgstr "भारत"
+
+#: frontend/templates/frontend/donation.html:80
+msgid "USA"
+msgstr "संयुक्त राज्य अमेरिका"
+
+#: frontend/templates/frontend/donation.html:84
+msgid "Describe Yourself"
+msgstr "आफ्नो बारेमा भन्नुहोस "
+
+#: frontend/templates/frontend/donation.html:86
+msgid "Submit Donation"
+msgstr "दान पेश गर्नुहोस्"
+
+#: frontend/templates/frontend/history.html:50
+#: frontend/templates/frontend/index.html:119
+msgid "People have joined the campaigns"
+msgstr "निम्न जनता अभियानमा लागेका छन्"
+
+#: frontend/templates/frontend/index.html:22
+msgid "Vote"
+msgstr "मतदान"
+
+#: frontend/templates/frontend/index.html:23
+msgid "Always for democratic principles and behavior"
+msgstr "सधैं लोकतान्त्रिक सिद्धान्त र व्यवहारको लागि"
+
+#: frontend/templates/frontend/index.html:38
+msgid "In matters of freedom "
+msgstr "स्वतन्त्रता को मामला मा"
+
+#: frontend/templates/frontend/index.html:39
+msgid "Join every day"
+msgstr "हरेक दिन सामेल हुनुहोस्"
+
+#: frontend/templates/frontend/index.html:54
+msgid "Your vote is the "
+msgstr "तपाईको मतदान नै "
+
+#: frontend/templates/frontend/index.html:55
+msgid "Power of Democracy"
+msgstr "लोकतन्त्रको शक्ति हो "
+
+#: frontend/templates/frontend/index.html:56
+msgid "People need truth, Our goal is stability"
+msgstr "मानिसहरूलाई सत्यता चाहिन्छ, हाम्रो लक्ष्य स्थिरता हो"
+
+#: frontend/templates/frontend/index.html:73 nkm/settings.py:166
+#: nkm/settings.py:167
+msgid "Nagarik Unmukti Party"
+msgstr "नागरिक उन्मुक्ति पार्टी"
+
+#: frontend/templates/frontend/index.html:74
+msgid "We can build <br> better future together "
+msgstr "हामी मिलेर राम्रो <br> भविष्य बनाउन सक्छौं"
+
+#: frontend/templates/frontend/index.html:79
+msgid ""
+"Synonymous with glorious history, responsible present and a bright secure "
+"future."
+msgstr "गौरवमय इतिहास, जिम्मेवार वर्तमान र उज्यालो सुनिश्चित भविष्य’को पर्यायवाची।"
+
+#: frontend/templates/frontend/index.html:83
+msgid ""
+"Seven decades of relentless struggle for nationalism, democracy and "
+"socialism."
+msgstr "राष्ट्रियता, लोकतत्र र समाजवादका लागि सात दशकको अनवरत संघर्ष।"
+
+#: frontend/templates/frontend/index.html:87
+msgid ""
+"The Nagarik Unmukti Party is a movement that is determined to build a "
+"prosperous Nepal based on the ideas and culture of the epoch maker Resham "
+"Chaudhary"
+msgstr ""
+"रेशम चौधरीको विचार र संस्कारको जगमा समुन्नत नेपाल निर्माणका लागि दृढ अठोट राख्ने "
+"आन्दोलन हो नागरिक उन्मुक्ति पार्टी।"
+
+#: frontend/templates/frontend/index.html:104
+msgid "Vote Status"
+msgstr "मतदान स्थिति"
+
+#: frontend/templates/frontend/index.html:107
+#: frontend/templates/frontend/index.html:153
+msgid "Learn More"
+msgstr "अझै जान्नुहोस"
+
+#: frontend/templates/frontend/index.html:136
+msgid "Mission and Vision"
+msgstr "लक्ष्य र दृष्टि"
+
+#: frontend/templates/frontend/index.html:141
+msgid "Civil Rights <br> Attorney"
+msgstr "नागरिक अधिकार <br> अधिवक्ता"
+
+#: frontend/templates/frontend/index.html:145
+msgid "Majored in <br> Political"
+msgstr "राजनीतिमा <br> मेजर"
+
+#: frontend/templates/frontend/index.html:149
+msgid "Political<br> Solutions"
+msgstr "राजनीतिक<br> समाधान"
+
+#: frontend/templates/frontend/index.html:170
+msgid "Contribute to help us win"
+msgstr "हामीलाई जित्न मद्दत गर्न योगदान गर्नुहोस्"
+
+#: frontend/templates/frontend/index.html:181
+msgid "Donate"
+msgstr "दान गर्नुहोस्"
+
+#: frontend/templates/frontend/index.html:193
+msgid "Policy Positions"
+msgstr "नीति पदहरू"
+
+#: frontend/templates/frontend/index.html:194
+msgid "Campaign Principles"
+msgstr "अभियानका सिद्धान्तहरू"
+
+#: frontend/templates/frontend/index.html:200
+msgid "Environment"
+msgstr "वातावरण"
+
+#: frontend/templates/frontend/index.html:206
+msgid "Healthcare"
+msgstr "स्वास्थ्य सेवा"
+
+#: frontend/templates/frontend/index.html:212
+msgid "Tax Returns"
+msgstr "कर रिटर्नहरू"
+
+#: frontend/templates/frontend/index.html:218
+msgid "Economy"
+msgstr "अर्थतन्त्र"
+
+#: frontend/templates/frontend/index.html:224
+msgid "Education"
+msgstr "शिक्षा"
+
+#: frontend/templates/frontend/index.html:228
+msgid "How we can build a better country together"
+msgstr "हामी मिलेर कसरि  <br> राम्रो भविष्य <br> बनाउन सक्छौं"
+
+#: frontend/templates/frontend/index.html:228
+msgid "Donate or be Member."
+msgstr "दान गर्नुहोस् वा सदस्य बन्नुहोस्।"
+
+#: frontend/templates/frontend/index.html:235
+msgid "Join  Campaigns"
+msgstr "अभियानहरूमा सामेल हुनुहोस्"
+
+#: frontend/templates/frontend/index.html:283
+msgid "Leader"
+msgstr "नेता"
+
+#: frontend/templates/frontend/index.html:290
+msgid "Watch Campaigns "
+msgstr "अभियानहरू हेर्नुहोस्"
+
+#: frontend/templates/frontend/index.html:319
+msgid "Don't miss our monthly updates"
+msgstr "हाम्रो मासिक अपडेटहरू नछुटाउनुहोस्"
+
+#: frontend/templates/frontend/index.html:324
+msgid "Subscribe"
+msgstr "सदस्यता लिनुहोस्"
+
+#: frontend/templates/frontend/index.html:337
+msgid "Nagarik Unmukti Party Updates"
+msgstr "नागरिक उन्मुक्ति पार्टी  अपडेटहरू"
+
+#: frontend/templates/frontend/index.html:338
+msgid "From Campaign"
+msgstr "अभियानबाट"
+
+#: frontend/templates/frontend/index.html:356
+#: notice/templates/notice/post/list.html:88
+msgid "Read More"
+msgstr "अझै जान्नुहोस"
+
+#: frontend/templates/frontend/index.html:385
+msgid "Facebook"
+msgstr "फेसबुक"
+
+#: frontend/templates/frontend/index.html:386
+msgid "280,366"
+msgstr "२८०,३६६"
+
+#: frontend/templates/frontend/index.html:392
+msgid "Latest Tweets"
+msgstr "नवीनतम ट्वीटहरू"
+
+#: frontend/templates/frontend/member.html:39
+msgid "Become a Member "
+msgstr "सदस्य बन्नुहोस्"
+
+#: frontend/templates/frontend/member.html:40
+msgid "Apply & Join Us Today"
+msgstr "आवेदन दिनुहोस् र आज हामीसँग सामेल हुनुहोस्"
+
+#: frontend/templates/frontend/member.html:63
+msgid "Send Request"
+msgstr "अनुरोध पठाउने"
+
+#: nkm/settings.py:128
+msgid "Nepali"
+msgstr "नेपाली"
+
+#: nkm/settings.py:129
+msgid "English"
+msgstr "अंग्रेजी"
+
+#: notice/models.py:22
+msgid "draft"
+msgstr "अप्रकाशित"
+
+#: notice/models.py:23
+msgid "published"
+msgstr "प्रकाशित"
+
+#: notice/models.py:36
+msgid "body"
+msgstr "सामग्री"
+
+#: notice/models.py:42 notice/models.py:43
+msgid "notice"
+msgstr "सूचना"
+
+#: notice/templates/notice/post/detail.html:65
+msgid "Read PDF File"
+msgstr "PDF फाइल पढ्नुहोस्"
+
+#: notice/templates/notice/post/detail.html:73
+msgid "Tags: "
+msgstr "ट्यागहरू:"
+
+#: notice/templates/notice/post/detail.html:111
+msgid "There are no comments yet. "
+msgstr "यहाँ अझै कुनै टिप्पणीहरू छैनन्।"
+
+#: notice/templates/notice/post/detail.html:115
+msgid "Your comment is added"
+msgstr "तपाईंको टिप्पणी थपिएको छ"
+
+#: notice/templates/notice/post/detail.html:117
+msgid "Leave a Comment"
+msgstr "एक टिप्पणी छोड्नुहोस्"
+
+#: notice/templates/notice/post/detail.html:135
+msgid "Your Email"
+msgstr "तपाइको इमेल"
+
+#: notice/templates/notice/post/detail.html:139
+msgid "Comment"
+msgstr "टिप्पणी गर्नुहोस्"
+
+#: notice/templates/notice/post/detail.html:141
+msgid "Submit Comment"
+msgstr "टिप्पणी पेश"
+
+#: notice/templates/notice/post/sidebar.html:7
+msgid "Search"
+msgstr "खोज्नुहोस्"
+
+#: notice/templates/notice/post/sidebar.html:9
+msgid "Search here..."
+msgstr "खोज्नुहोस्........."
+
+#: notice/templates/notice/post/sidebar.html:14
+msgid "Latest Notices"
+msgstr "नवीनतम सूचना"
+
+#: notice/templates/notice/post/sidebar.html:37
+msgid "Tags"
+msgstr "ट्यागहरू"
+
+#~ msgid " Events"
+#~ msgstr "घटना"
+
+#~ msgid "Updates"
+#~ msgstr "अपडेट"
+
+#~ msgid "Upcoming Events"
+#~ msgstr "आउदा  घटना"
+
+#~ msgid "Our  new campaign starts in"
+#~ msgstr "हाम्रो नयाँ अभियान सुरु हुन्छ"
+
+#, fuzzy
+#~ msgid "flipbook"
+#~ msgstr "पुस्तक पाठक"
+
+#~ msgid "News"
+#~ msgstr "समाचार"
+
+#~ msgid "Member Request Successfully Submitted"
+#~ msgstr "सदस्य अनुरोध सफलतापूर्वक पेस गरियो"
+
+#~ msgid "Please fill all the required fields correctly"
+#~ msgstr "कृपया सबै आवश्यक फिल्डहरू सही रूपमा भर्नुहोस्"
+
+#~ msgid "reason"
+#~ msgstr "कारण"
+
+#~ msgid "Majored"
+#~ msgstr "मेजर"
+
+#~ msgid "Political"
+#~ msgstr "राजनीतिक"
+
+#, fuzzy
+#~ msgid "666 888 0000"
+#~ msgstr "६६६ ८८८ ०००"
+
+#~ msgid "468,980"
+#~ msgstr "४६८,९८०"

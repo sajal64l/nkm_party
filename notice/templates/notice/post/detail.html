@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load static %}
+{% load notice_tags %}
+
+{% block title %}<title>{{post.title}}</title>{% endblock %}
+
+
+{% block content %}
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'flipbook/pdfjs-flipbook/css/jquery.fancybox.min.css' %}" />
+	<script type="text/javascript" src="{% static 'flipbook/pdfjs-flipbook/js/jquery.fancybox.min.js' %}"></script>
+	<script>
+		// Adjust iframe height according to the contents
+		parent.jQuery.fancybox.getInstance().update();
+
+		// Close current fancyBox instance
+		parent.jQuery.fancybox.getInstance().close();
+	</script>
+	<style>
+		.fancybox-slide--iframe .fancybox-content {
+			width: 95%;
+			height: 95%;
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0;
+		}
+	</style>
+
+	<section class="inner-banner">
+		<div class="container">
+			<h2 class="inner-banner__title">{{ post.title }}</h2><!-- /.inner-banner__title -->
+			<ul class="list-unstyled thm-breadcrumb">
+				<li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+				<li><a href="{% url 'notice:post_list' %}">{% trans 'Notice' %}</a></li>
+				<li>{{ post.title }}</li>
+			</ul><!-- /.list-unstyled -->
+		</div><!-- /.container -->
+	</section><!-- /.inner-banner -->
+
+	<section class="blog-details">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="blog-one__single">
+						<div class="blog-one__image">
+							<img src="{{ post.image.url }}" alt="">
+						</div><!-- /.blog-one__image -->
+						<div class="blog-one__content">
+							<ul class="list-unstyled blog-one__meta">
+								<li><a href="#">By {{ post.author|capfirst }}</a></li>
+								<li><a href="#">{{ post.publish }}</a></li>
+								<li><a href="#">{{ post.comments.count }} comment{{ post.comments.count|pluralize }}</a></li>
+							</ul><!-- /.list-unstyled -->
+							<h3 class="blog-one__title">{{ post.title }}</h3><!-- /.blog-one__title -->
+							<p class="blog-one__text">{{ post.body|markdown }}</p>
+
+							
+							<div>
+								{% if post.flipbook %}
+									<a data-fancybox data-type="iframe" data-src="/flipbook/viewer.html?file={{ post.flipbook.flipbook_document.url }}#magazineMode=true" class="left-block" href="javascript:;">{% trans 'Read PDF File' %}</a>
+								{% endif %}
+							</div>
+							
+
+							<div class="share-block">
+								<div class="left-block">
+									
+									<p>{% trans 'Tags: ' %}{% for tag in tag_list %}<a href="{% url 'notice:post_list_by_tag' tag.slug %}">{{tag.name|capfirst}}</a>{% endfor %}</p>
+									
+								</div><!-- /.left-block -->
+								<div class="social-block">
+									<a class="fa fa-twitter" href="#"></a>
+									<a class="fa fa-facebook-square" href="#"></a>
+									<a class="fa fa-instagram" href="#"></a>
+									<a class="fa fa-pinterest-p" href="#"></a>
+								</div><!-- /.social-block -->
+								
+							</div><!-- /.share-block -->
+						</div><!-- /.blog-one__content -->
+					</div><!-- /.blog-one__single -->
+					<br>
+					<h2 class="blog-details__content-title">{{ post.comments.count }} comment{{ post.comments.count|pluralize }}</h2><!-- /.blog-details__content-title -->
+					<div class="comment-one">
+						{% for comment in comments %}
+							<div class="comment-one__single">
+								<div class="comment-one__image">
+									<div class="inner-block">
+										<img src="{% static 'images/blog/comment-1-1.jpg' %}" alt="Awesome Image" />
+									</div><!-- /.inner-block -->
+								</div><!-- /.comment-one__image -->
+								<div class="comment-one__content">
+									<div class="comment-one__content-top">
+										<div class="comment-one__top-left">
+											<h3 class="comment-one__author">{{ comment.name }}</h3>
+											<!-- /.comment-one__author -->
+											<p class="comment-one__date">{{ comment.created }}<span class="comment-one__date-sep"></span> 4:00 pm</p>
+											<!-- /.comment-one__date -->
+											<p class="comment-one__text">{{ comment.body|linebreaks }}</p>
+											<!-- /.comment-one__text -->
+										</div><!-- /.comment-one__top-left -->
+										
+									</div><!-- /.comment-one__content-top -->
+								</div><!-- /.comment-one__content -->
+							</div><!-- /.comment-one__single -->
+						{% empty %}
+							<p class="comment-one__text">{% trans 'There are no comments yet. ' %}</p>
+						{% endfor %}
+					</div><!-- /.comment-one -->
+					{% if new_comment %}
+						<h2 class="blog-details__content-title">{% trans 'Your comment is added' %}</h2>
+					{% else %}
+						<h2 class="blog-details__content-title">{% trans 'Leave a Comment' %}</h2><!-- /.blog-details__content-title -->
+						<form class="reply-form" method="post">
+							{% csrf_token %}
+							<div class="row">
+								<!-- {% for field in comment_form %}
+									<div class="col-lg-12">
+										<label for="{{ field.name}}">{{ field.label}}</label>{{ field }}
+									</div>
+								{% endfor %} -->
+								<!-- <div class="col-lg-12">
+									{{ comment_form.post }}
+								</div> -->
+								
+								<div class="col-lg-6">
+									<label for="name">{% trans 'Your Name' %}</label>
+									{{ comment_form.name }}
+								</div><!-- /.col-lg-6 -->
+								<div class="col-lg-6">
+									<label for="email">{% trans 'Your Email' %}</label>
+									{{ comment_form.email }}
+								</div><!-- /.col-lg-6 -->
+								<div class="col-lg-12">
+									<label for="body">{% trans 'Comment' %}</label>
+									{{ comment_form.body }}
+									<button class="reply-form__btn thm-btn" type="submit" value="submit">{% trans 'Submit Comment' %}</button>
+								</div><!-- /.col-lg-12 -->
+							</div><!-- /.row -->
+						</form><!-- /.reply-form -->
+					{% endif %}
+				</div><!-- /.col-lg-8 -->
+
+				{% include 'notice/post/sidebar.html'%}
+
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+{% endblock %}

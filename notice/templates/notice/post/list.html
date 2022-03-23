@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load static %}
+{% load notice_tags %}
+
+{% block title %}<title>{% trans 'Notice' %}</title>{% endblock %}
+
+{% block content %}
+
+    <section class="inner-banner">
+        <div class="container">
+            {% if query %}
+                    <h2 class="inner-banner__title">{{query|capfirst}}</h2>
+                    <h2 class="inner-banner__title">
+                        {% with results.count as total_results %}
+                        Found {{ total_results }} result{{ total_results|pluralize }}
+                        {% endwith %}
+                    </h2>
+                {% elif tag %}
+                    <h2 class="inner-banner__title">{{tag.name|capfirst}}</h1>
+                {% else %}
+                    <h2 class="inner-banner__title">{% trans 'Notice' %}</h2>
+				{% endif %}
+            <!-- /.inner-banner__title -->
+            <ul class="list-unstyled thm-breadcrumb">
+                <li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+                <li><a href="{% url 'notice:post_list' %}">{% trans 'Notice' %}</a></li>
+                {% if query %}
+                    <li>{{query|capfirst}}</li>
+                {% elif tag %}
+                    <li><a href="{%url 'notice:post_list_by_tag' tag.slug%}">{{tag.name|capfirst}}</li>
+                {% endif %}
+            </ul><!-- /.list-unstyled -->
+        </div><!-- /.container -->
+    </section><!-- /.inner-banner -->
+
+    <section class="blog-one">
+        <div class="container">
+            <div class="row">
+                {% if query %}
+                    {% for post in results %}
+                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                            <div class="blog-one__single">
+                                <div class="blog-one__image">
+                                    <img src="{{ post.image.url }}" alt="">
+                                    <a class="blog-one__more-link" href="{{ post.get_absolute_url }}"><i class="fa fa-link"></i>
+                                        <!-- /.fa fa-link --></a>
+                                </div><!-- /.blog-one__image -->
+                                <div class="blog-one__content">
+                                    <ul class="list-unstyled blog-one__meta">
+                                        <li><a href="#">{{ post.publish }}</a></li>
+                                    </ul><!-- /.list-unstyled -->
+                                    <h3 class="blog-one__title">
+                                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                                    </h3><!-- /.blog-one__title -->
+                                    <a href="{{ post.get_absolute_url }}" class="blog-one__link">Read More</a><!-- /.blog-one__link -->
+                                </div><!-- /.blog-one__content -->
+                            </div><!-- /.blog-one__single -->
+                        </div><!-- /.col-lg-4 -->
+                {% empty %}
+                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                            <div class="blog-one__single">
+                                <div class="blog-one__content">
+                                    <h3 class="blog-one__title">
+                                        <a href="#">Please Search again</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    {% for post in posts %}
+                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                            <div class="blog-one__single">
+                                <div class="blog-one__image" style="background-color: white; text-align: center;">
+                                    <img src="{{ post.image.url }}" style="max-width: 20rem; height: 14rem; align-items: center;" alt="">
+                                    <a class="blog-one__more-link" href="{{ post.get_absolute_url }}"><i class="fa fa-link"></i>
+                                        <!-- /.fa fa-link --></a>
+                                </div><!-- /.blog-one__image -->
+                                <div class="blog-one__content">
+                                    <ul class="list-unstyled blog-one__meta">
+                                        <li><a href="#">{{ post.publish }}</a></li>
+                                    </ul><!-- /.list-unstyled -->
+                                    <h3 class="blog-one__title">
+                                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                                    </h3><!-- /.blog-one__title -->
+                                    <a href="{{ post.get_absolute_url }}" class="blog-one__link">{% trans 'Read More' %}</a><!-- /.blog-one__link -->
+                                </div><!-- /.blog-one__content -->
+                            </div><!-- /.blog-one__single -->
+                        </div><!-- /.col-lg-4 -->
+                    {% endfor %}
+                {% endif %}
+            </div><!-- /.row -->
+
+            <div class="post-pagination">
+                {% if not query %}
+                    {% include 'pagination.html' with page=posts %}
+                {% endif %}
+            </div>
+
+        </div><!-- /.container -->
+    </section><!-- /.blog-one -->
+
+ 
+
+{% endblock %}

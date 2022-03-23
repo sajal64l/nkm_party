@@ -1,0 +1,437 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+<title>{% trans "Home" %}</title>
+{% endblock %}
+
+{% block content %}
+
+    <div class="banner-wrapper" id="home">
+        <div class="banner-one__nav">
+            <a href="#" class="banner-one__nav-left"><i class="fa fa-angle-left"></i><!-- /.fa fa-angle-left --></a>
+            <a href="#" class="banner-one__nav-right"><i class="fa fa-angle-right"></i><!-- /.fa fa-angle-right --></a>
+        </div><!-- /.banner-one__nav -->
+        <section class="banner-one banner-carousel__one owl-theme owl-carousel">
+            <div class="item">
+                <div class="banner-one__slide  banner-one__slide-1" style="background-image: url({% static 'images/party/slider_blur.jpg' %});">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 text-left">
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:5rem;">{% trans "Vote" %}</h3>
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:3rem;">{% trans "Always for democratic principles and behavior" %}</h3>
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:1.8rem;">{% trans "At the heart of the theory and practice is our belief that citizens should participate in the political process" %}</h3>
+                                <div class="banner-one__btn-block">
+                                    <a href="#" class="thm-btn banner-one__btn">{% trans "Discover More" %}</a>
+                                </div><!-- /.btn-block -->
+                            </div><!-- /.col-lg-12 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.banner-one__slide -->
+            </div><!-- /.item -->
+            <div class="item">
+                <div class="banner-one__slide  banner-one__slide-2" style="background-image: url({% static 'images/party/slider_blur.jpg' %});">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 text-left">
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:5rem;">{% trans "In matters of freedom " %}</h3>
+                                <h3 class="banner-one__title banner-one__light-color"style="font-size:3rem;">{% trans "Join every day" %}</h3>
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:1.8rem;">{% trans "To not keep our voices steady. Let's shake hands" %}</h3>
+                                <div class="banner-one__btn-block">
+                                    <a href="#" class="thm-btn banner-one__btn">{% trans "Discover More" %}</a>
+                                </div><!-- /.btn-block -->
+                            </div><!-- /.col-lg-12 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.banner-one__slide -->
+            </div><!-- /.item -->
+            <div class="item">
+                <div class="banner-one__slide  banner-one__slide-3" style="background-image: url({% static 'images/party/slider_blur.jpg' %});">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 text-left">
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:5rem;">{% trans "Your vote is the " %}</h3>
+                                <h3 class="banner-one__title banner-one__light-color"style="font-size:3rem;">{% trans "Power of Democracy" %}</h3>
+                                <h3 class="banner-one__title banner-one__light-color" style="font-size:1.8rem;">{% trans "People need truth, Our goal is stability" %}</h3>
+                                <div class="banner-one__btn-block">
+                                    <a href="#" class="thm-btn banner-one__btn">{% trans "Discover More" %}</a>
+                                </div><!-- /.btn-block -->
+                            </div><!-- /.col-lg-12 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.banner-one__slide -->
+            </div><!-- /.item -->
+        </section><!-- /.banner-one -->
+    </div><!-- /.static-banner-one -->
+    <section class="about-four">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="about-four__content">
+                        <div class="block-title text-left">
+                            <p class="block-title__tag-line">{% trans "Nagarik Unmukti Party" %}</p>
+                            <h2 class="block-title__title">{% trans "We can build <br> better future together " %}</h2><!-- /.block-title__title -->
+                        </div><!-- /.block-title -->
+                        <ul class="list-unstyled about-four__list">
+                            <li>
+                                <img src="{% static 'images/resources/menu-active-star.png' %}" alt="Awesome Image" />
+                                {% trans "Synonymous with glorious history, responsible present and a bright secure future." %} 
+                            </li>
+                            <li>
+                                <img src="{% static 'images/resources/menu-active-star.png' %}" alt="Awesome Image" />
+                                {% trans "Seven decades of relentless struggle for nationalism, democracy and socialism." %} 
+                            </li>
+                            <li>
+                                <img src="{% static 'images/resources/menu-active-star.png' %}" alt="Awesome Image" />
+                                {% trans "The Nagarik Unmukti Party is a movement that is determined to build a prosperous Nepal based on the ideas and culture of the epoch maker Resham Chaudhary" %}
+                            </li>
+                        </ul><!-- /.list-unstyled about-four__list -->
+                    </div><!-- /.about-four__content -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-xl-6 col-lg-12">
+                    <div class="row low-gutters">
+                        <div class="col-md-6 wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="about-four__image">
+                                <img src="{% static 'images/resources/about-1-1.jpg' %}" class="img-fluid" alt="Awesome Image" />
+                                <img src="{% static 'images/resources/sign.png' %}" class="about-four__sign" alt="Awesome Image" />
+                            </div><!-- /.about-four__image -->
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                            <div class="about-four__box thm-base-bg-2 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="about-four__box-top">
+                                    <i class="potisen-icon-poll"></i>
+                                    <h4 class="about-four__box-title">{% trans "Vote Status" %}</h4><!-- /.about-four__box-title -->
+                                </div><!-- /.about-four__box-top -->
+                                <p class="about-four__box-text">{% trans "To not keep our voices steady. Let's shake hands" %}</p><!-- /.about-four__box-text -->
+                                <a href="#" class="thm-btn about-four__btn">{% trans "Learn More" %}</a>
+                            </div><!-- /.about-four__box -->
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row low-gutters -->
+                </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.about-four -->
+    <section class="fact-one">
+        <div class="container text-center">
+            <img src="{% static 'images/resources/decor-star-1-1.png' %}" class="fact-one__star-1" alt="">
+            <h3 class="fact-one__title counter">468,980</h3>
+            <p class="fact-one__text">{% trans "People have joined the campaigns" %}</p>
+            <img src="{% static 'images/resources/decor-star-1-1.png' %}" class="fact-one__star-2" alt="">
+        </div><!-- /.container -->
+    </section><!-- /.fact-one -->
+    <section class="about-three thm-gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-three__image">
+                        <img src="{% static 'images/resources/mission-vision.jpg' %}" alt="Awesome Image" />
+                    </div><!-- /.about-three__image -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="about-three__content">
+                        <div class="block-title text-left">
+                            <img src="{% static 'images/resources/sec-title-star.png' %}" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1500ms">
+                            <p class="block-title__tag-line">{% trans "About Nagarik Unmukti Party" %}</p>
+                            <h2 class="block-title__title">{% trans "Mission and Vision" %}</h2><!-- /.block-title__title -->
+                        </div><!-- /.block-title -->
+                        <div class="about-three__box-wrap">
+                            <div class="about-three__box">
+                                <i class="potisen-icon-bid"></i>
+                                <h4 class="about-three__box-title">{% trans "Civil Rights <br> Attorney" %}</h4><!-- /.about-three__box-title -->
+                            </div><!-- /.about-three__box -->
+                            <div class="about-three__box">
+                                <i class="potisen-icon-work"></i>
+                                <h4 class="about-three__box-title">{% trans "Majored in <br> Political" %}</h4><!-- /.about-three__box-title -->
+                            </div><!-- /.about-three__box -->
+                            <div class="about-three__box">
+                                <i class="potisen-icon-politics"></i>
+                                <h4 class="about-three__box-title">{% trans "Political<br> Solutions" %}</h4><!-- /.about-three__box-title -->
+                            </div><!-- /.about-three__box -->
+                        </div><!-- /.about-three__box-wrap -->
+                        <p class="about-three__text">{% trans "At the heart of the theory and practice is our belief that citizens should participate in the political process" %}</p><!-- /.about-three__text -->
+                        <a href="#" class="thm-btn about-three__btn">{% trans "Learn More" %}</a>
+                    </div><!-- /.about-three__content -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.about-three -->
+    <section class="cta-two cta-two__home-one">
+        <div class="container">
+            <p class="cta-two__tag-line">{% trans "Join the Fight for Freedom" %}</p><!-- /.cta-two__tag-line -->
+            <h3 class="cta-two__title">{% trans "Help us Bring <br> the Change we Need" %}</h3><!-- /.cta-two__title -->
+            <a href="#" class="thm-btn cta-two__btn">{% trans "Become a Member" %}</a>
+        </div><!-- /.container -->
+        <div class="donation-contribute wow fadeInUp" data-wow-duration="1500ms">
+            <div class="container">
+                <div class="inner-container thm-base-bg-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <h3 class="donation-contribute__title">{% trans "Contribute to help us win" %}</h3><!-- /.donation-contribute__title -->
+                        </div><!-- /.col-lg-5 -->
+                        <div class="col-lg-7">
+                            <form class="donation-contribute__form">
+                                <div class="donation-contribute__amount">
+                                    <select class="selectpicker">
+                                        <option>Rs.</option>
+                                        <option>$</option>
+                                    </select>
+                                    <input type="text" name="donation-money" value="5.00">
+                                </div><!-- /.donation-contribute__amount -->
+                                <button type="submit" class="thm-btn donation-contribute__btn">{% trans "Donate" %}</button>
+                            </form>
+                        </div><!-- /.col-lg-7 -->
+                    </div><!-- /.row -->
+                </div><!-- /.inner-container -->
+            </div><!-- /.container -->
+        </div><!-- /.donation-contribute -->
+    </section><!-- /.cta-two -->
+    <section class="campaing-one">
+        <div class="container">
+            <div class="block-title text-center">
+                <img src="{% static 'images/resources/sec-title-star.png' %}" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1500ms">
+                <p class="block-title__tag-line">{% trans "Policy Positions" %}</p>
+                <h2 class="block-title__title">{% trans "Campaign Principles" %}</h2><!-- /.block-title__title -->
+            </div><!-- /.block-title -->
+            <div class="row">
+                <div class="column-5">
+                    <div class="campaing-one__single">
+                        <i class="potisen-icon-sprout"></i>
+                        <h3 class="campaing-one__title"><a href="#">{% trans "Environment" %}</a></h3><!-- /.campaing-one__title -->
+                    </div><!-- /.campaing-one__single -->
+                </div><!-- /.column-5 -->
+                <div class="column-5">
+                    <div class="campaing-one__single">
+                        <i class="potisen-icon-care"></i>
+                        <h3 class="campaing-one__title"><a href="#">{% trans "Healthcare" %}</a></h3><!-- /.campaing-one__title -->
+                    </div><!-- /.campaing-one__single -->
+                </div><!-- /.column-5 -->
+                <div class="column-5">
+                    <div class="campaing-one__single">
+                        <i class="potisen-icon-medal"></i>
+                        <h3 class="campaing-one__title"><a href="#">{% trans "Tax Returns" %}</a></h3><!-- /.campaing-one__title -->
+                    </div><!-- /.campaing-one__single -->
+                </div><!-- /.column-5 -->
+                <div class="column-5">
+                    <div class="campaing-one__single">
+                        <i class="potisen-icon-idea"></i>
+                        <h3 class="campaing-one__title"><a href="#">{% trans "Economy" %}</a></h3><!-- /.campaing-one__title -->
+                    </div><!-- /.campaing-one__single -->
+                </div><!-- /.column-5 -->
+                <div class="column-5">
+                    <div class="campaing-one__single">
+                        <i class="potisen-icon-mortarboard"></i>
+                        <h3 class="campaing-one__title"><a href="#">{% trans "Education" %}</a></h3><!-- /.campaing-one__title -->
+                    </div><!-- /.campaing-one__single -->
+                </div><!-- /.column-5 -->
+            </div><!-- /.row -->
+            <p class="campaing-one__more-text text-center">{% trans "How we can build a better country together" %}!.<a href="donation.html">{% trans "Donate or be Member."%}</a></p><!-- /.campaing-one__more-text -->
+        </div><!-- /.container -->
+    </section><!-- /.campaing-one -->
+    <section class="about-two">
+        <div class="container">
+            <div class="block-title text-center">
+                <img src="{% static 'images/resources/sec-title-star.png' %}" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1500ms">
+                <p class="block-title__tag-line">{% trans "Join  Campaigns" %}</p>
+                <h2 class="block-title__title">{% trans "We Will Make <br> History Together" %}</h2><!-- /.block-title__title -->
+            </div><!-- /.block-title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-two__content">
+                        <div class="row">
+                            {% for h in history %}
+                                <div class="col-sm-4">
+                                    <img src="{{ h.image.url }}" alt="" class="img-fluid" />
+                                </div><!-- /.col-sm-4 -->
+                            {% endfor %}
+                        </div><!-- /.row -->
+                        <p class="about-two__text">{% trans "At the heart of the theory and practice is our belief that citizens should participate in the political process" %}</p><!-- /.about-two__text -->
+                    </div><!-- /.about-two__content -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="accrodion-grp" data-grp-name="faq-accrodion">
+                        {% for f in faq %}
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>{{ f.question }}</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>{{ f.answer }}</p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                        {% endfor %}
+                            
+                        
+                    </div>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.about-two -->
+    <section class="testimonials-two">
+        <div class="testimonials-two__carousel">
+            <div class="swiper-wrapper">
+                {% for s in speech %}
+                    <div class="swiper-slide">
+                        <div class="testimonials-two__single" style="background-image: url({{ s.thumbnail.url }});">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7">
+                                        <i class="potisen-icon-quote testimonials-two__icon"></i>
+                                        <h3 class="testimonials-two__text">{{ s.title }}</h3>
+                                        <p class="testimonials-two__name">{% trans 'Leader' %} : {{ s.leader }}</p><!-- /.testimonials-two__name -->
+                                    </div><!-- /.col-lg-7 -->
+                                    <div class="col-lg-5 d-flex justify-content-xl-end justify-content-sm-start">
+                                        <div class="testimonials-two__btn-wrap">
+                                            <a href="{{ s.video }}" class="testimonials-two__btn">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <span class="testimonials-two__btn-tag-line">{% trans 'Watch Campaigns ' %}<img src="{% static 'images/resources/video-arrow.png' %}" alt="Awesome Image" /></span>
+                                        </div><!-- /.testimonials-two__btn-wrap -->
+                                    </div><!-- /.col-lg-5 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container -->
+                        </div><!-- /.testimonials-two__single -->
+                    </div><!-- /.swiper-slide -->
+                {% endfor %}
+            </div><!-- /.swiper-wrapper -->
+        </div><!-- /.testimonials-two__carousel -->
+        <div class="testimonials-two__bottom thm-gray-bg">
+            <div class="container">
+                <div class="testimonials-two__thumb-carousel">
+                    <div class="swiper-wrapper">
+                        {% for s in speech %}
+                            <div class="swiper-slide" style=" background-color: #eef1f6 ; color: aqua;">
+                                <img src="{{ s.thumbnail.url }}" style="max-width: 15rem;" alt="">
+                            </div><!-- /.swiper-slide -->
+                       {% endfor %}
+                    </div><!-- /.swiper-wrapper -->
+                </div><!-- /.testimonials-one__thumb-carousel -->
+            </div><!-- /.container -->
+        </div><!-- /.testimonials-two__bottom -->
+    </section><!-- /.testimonials-two -->
+
+    <section class="mailchimp-one">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="mailchimp-one__title">{% trans "Don't miss our monthly updates" %}</h3><!-- /.mailchimp-one__title -->
+                </div><!-- /.col-lg-5 -->
+                <div class="col-lg-7">
+                    <form class="mailchimp-one__form mc-form" data-url="https://xyz.us18.list-manage.com/subscribe/post?u=20e91746ef818cd941998c598&amp;id=cc0ee8140e">
+                        <input placeholder="Email Address" type="email" required="required" class="formInput" name="EMAIL">
+                        <button type="submit" class="thm-btn mailchimp-one__form-btn">{% trans "Subscribe" %}</button>
+                    </form>
+                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                </div><!-- /.col-lg-7 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.mailchimp-one -->
+
+
+    <section class="blog-one blog-one__home-one">
+        <div class="container">
+            <div class="block-title text-center">
+                <img src="{% static 'images/resources/sec-title-star.png' %}" alt="Awesome Image" class="wow rotateIn" data-wow-duration="1500ms">
+                <p class="block-title__tag-line">{% trans "Nagarik Unmukti Party Updates" %}</p>
+                <h2 class="block-title__title">{% trans "From Campaign" %}</h2><!-- /.block-title__title -->
+            </div><!-- /.block-title -->
+            <div class="row">
+                {% for post in posts %}
+                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                            <div class="blog-one__single">
+                                <div class="blog-one__image" style="background-color: white; text-align: center;">
+                                    <img src="{{ post.image.url }}" style="max-width: 20rem; height: 14rem; align-items: center;" alt="">
+                                    <a class="blog-one__more-link" href="{% url 'notice:post_list' %}"><i class="fa fa-link"></i>
+                                        <!-- /.fa fa-link --></a>
+                                </div><!-- /.blog-one__image -->
+                                <div class="blog-one__content">
+                                    <ul class="list-unstyled blog-one__meta">
+                                        <li><a href="#">{{ post.publish }}</a></li>
+                                    </ul><!-- /.list-unstyled -->
+                                    <h3 class="blog-one__title">
+                                        <a href="{% url 'notice:post_list' %}">{{ post.title }}</a>
+                                    </h3><!-- /.blog-one__title -->
+                                    <a href="{% url 'notice:post_list' %}" class="blog-one__link">{% trans 'Read More' %}</a><!-- /.blog-one__link -->
+                                </div><!-- /.blog-one__content -->
+                            </div><!-- /.blog-one__single -->
+                        </div><!-- /.col-lg-4 -->
+                    {% endfor %}
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.blog-one -->
+
+    <div class="brand-one thm-gray-bg">
+        <div class="container">
+            <div class="brand-one__carousel owl-carousel owl-theme">
+                {% for g in gallery %}
+                <div class="item">
+                    <img src= {{g.image.url}}  alt="" />
+                </div>
+                <!-- /.item -->
+                {% endfor %}
+            </div><!-- /.brand-one__carousel owl-carousel owl-theme -->
+        </div><!-- /.container -->
+    </div><!-- /.brand-one thm-gray-bg -->
+
+
+    <section class="social-shares">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="social-shares__facebook thm-base-bg text-center">
+                        <i class="fa fa-facebook-square"></i>
+                        <p class="social-shares__facebook-name">{% trans "Facebook" %}</p><!-- /.social-shares__facebook-name -->
+                        <h3 class="social-shares__facebook-count">{% trans "280,366" %}</h3><!-- /.social-shares__facebook-count -->
+                        <a href="#" class="social-shares__facebook-link">#potisenfacebook</a>
+                    </div><!-- /.social-shares__facebook -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-8">
+                    <div class="social-shares__twitter thm-base-bg-2">
+                        <h3 class="social-shares__twitter-title">{% trans "Latest Tweets" %}</h3><!-- /.social-shares__twitter-title -->
+                        <div class="social-shares__twitter-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="social-shares__twitter-single">
+                                    <p class="social-shares__twitter-text">A Bill of Rights is what the people are entitled to against <a href="#"><strong>#politics</strong></a> every government, and what no just government should refuse, or rest on inference. <a href="#">https://t.co/LpyuHZaOMK</a> <a href="#">#ASMSG</a></p><!-- /.social-shares__twitter-text -->
+                                    <div class="social-shares__twitter-info">
+                                        <p class="social-shares__twitter-info-text">
+                                            <a href="#">@potisentwitterfollow</a>
+                                            <span>5 minutes ago</span>
+                                        </p><!-- /.social-shares__twitter-info-text -->
+                                        <i class="fa fa-twitter"></i>
+                                    </div><!-- /.social-shares__twitter-info -->
+                                </div><!-- /.social-shares__twitter-single -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="social-shares__twitter-single">
+                                    <p class="social-shares__twitter-text">A Bill of Rights is what the people are entitled to against <a href="#"><strong>#politics</strong></a> every government, and what no just government should refuse, or rest on inference. <a href="#">https://t.co/LpyuHZaOMK</a> <a href="#">#ASMSG</a></p><!-- /.social-shares__twitter-text -->
+                                    <div class="social-shares__twitter-info">
+                                        <p class="social-shares__twitter-info-text">
+                                            <a href="#">@potisentwitterfollow</a>
+                                            <span>5 minutes ago</span>
+                                        </p><!-- /.social-shares__twitter-info-text -->
+                                        <i class="fa fa-twitter"></i>
+                                    </div><!-- /.social-shares__twitter-info -->
+                                </div><!-- /.social-shares__twitter-single -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="social-shares__twitter-single">
+                                    <p class="social-shares__twitter-text">A Bill of Rights is what the people are entitled to against <a href="#"><strong>#politics</strong></a> every government, and what no just government should refuse, or rest on inference. <a href="#">https://t.co/LpyuHZaOMK</a> <a href="#">#ASMSG</a></p><!-- /.social-shares__twitter-text -->
+                                    <div class="social-shares__twitter-info">
+                                        <p class="social-shares__twitter-info-text">
+                                            <a href="#">@potisentwitterfollow</a>
+                                            <span>5 minutes ago</span>
+                                        </p><!-- /.social-shares__twitter-info-text -->
+                                        <i class="fa fa-twitter"></i>
+                                    </div><!-- /.social-shares__twitter-info -->
+                                </div><!-- /.social-shares__twitter-single -->
+                            </div><!-- /.item -->
+                        </div><!-- /.social-shares__twitter-carousel -->
+                    </div><!-- /.social-shares__twitter -->
+                </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.social-shares -->
+
+{% endblock %}

@@ -1,0 +1,719 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-23 04:42+0545\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: flipbook/cms_apps.py:7
+msgid "Flipbook"
+msgstr ""
+
+#: frontend/models.py:6 frontend/models.py:75
+msgid "image"
+msgstr ""
+
+#: frontend/models.py:7 frontend/models.py:21
+msgid "date"
+msgstr ""
+
+#: frontend/models.py:10 frontend/models.py:23 notice/models.py:35
+msgid "title"
+msgstr ""
+
+#: frontend/models.py:11
+msgid "description"
+msgstr ""
+
+#: frontend/models.py:15 frontend/models.py:16
+msgid "history"
+msgstr ""
+
+#: frontend/models.py:24
+msgid "leader"
+msgstr ""
+
+#: frontend/models.py:28 frontend/models.py:29
+msgid "speech"
+msgstr ""
+
+#: frontend/models.py:33
+msgid "question"
+msgstr ""
+
+#: frontend/models.py:34
+msgid "answer"
+msgstr ""
+
+#: frontend/models.py:38
+msgid "Frequently Asked Question"
+msgstr ""
+
+#: frontend/models.py:39
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: frontend/models.py:44
+msgid "male"
+msgstr ""
+
+#: frontend/models.py:44
+msgid "Male"
+msgstr ""
+
+#: frontend/models.py:45
+msgid "female"
+msgstr ""
+
+#: frontend/models.py:45
+msgid "Female"
+msgstr ""
+
+#: frontend/models.py:48
+msgid "married"
+msgstr ""
+
+#: frontend/models.py:48
+msgid "Married"
+msgstr ""
+
+#: frontend/models.py:49
+msgid "unmarried"
+msgstr ""
+
+#: frontend/models.py:49
+msgid "Unmarried"
+msgstr ""
+
+#: frontend/models.py:52
+msgid "full name"
+msgstr ""
+
+#: frontend/models.py:53
+msgid "citizenship district"
+msgstr ""
+
+#: frontend/models.py:54
+msgid "citizenship number"
+msgstr ""
+
+#: frontend/models.py:55
+msgid "voterlist number"
+msgstr ""
+
+#: frontend/models.py:56
+msgid "gender"
+msgstr ""
+
+#: frontend/models.py:57
+msgid "date of birth"
+msgstr ""
+
+#: frontend/models.py:58
+msgid "permanent address"
+msgstr ""
+
+#: frontend/models.py:59
+msgid "temporary address"
+msgstr ""
+
+#: frontend/models.py:60
+msgid "marriage status"
+msgstr ""
+
+#: frontend/models.py:61
+msgid "number of family members"
+msgstr ""
+
+#: frontend/models.py:62
+msgid "education"
+msgstr ""
+
+#: frontend/models.py:63
+msgid "caste"
+msgstr ""
+
+#: frontend/models.py:64
+msgid "occupation"
+msgstr ""
+
+#: frontend/models.py:65
+msgid "contact number"
+msgstr ""
+
+#: frontend/models.py:66
+msgid "email address"
+msgstr ""
+
+#: frontend/models.py:67
+msgid "reason for being member"
+msgstr ""
+
+#: frontend/models.py:71 frontend/models.py:72
+msgid "member"
+msgstr ""
+
+#: frontend/models.py:78
+msgid "gallery"
+msgstr ""
+
+#: frontend/models.py:79
+msgid "gallerys"
+msgstr ""
+
+#: frontend/templates/base.html:60 frontend/templates/frontend/contact.html:37
+msgid "9851249954"
+msgstr ""
+
+#: frontend/templates/base.html:63
+msgid "Donate Now"
+msgstr ""
+
+#: frontend/templates/base.html:64
+msgid "Join Us"
+msgstr ""
+
+#: frontend/templates/base.html:86 frontend/templates/frontend/about.html:15
+#: frontend/templates/frontend/contact.html:15
+#: frontend/templates/frontend/donation.html:15
+#: frontend/templates/frontend/history.html:15
+#: frontend/templates/frontend/index.html:6
+#: frontend/templates/frontend/member.html:15
+#: notice/templates/notice/post/detail.html:38
+#: notice/templates/notice/post/list.html:27
+msgid "Home"
+msgstr ""
+
+#: frontend/templates/base.html:89 frontend/templates/base.html:91
+#: frontend/templates/frontend/about.html:6
+msgid "About Us"
+msgstr ""
+
+#: frontend/templates/base.html:92 frontend/templates/frontend/history.html:6
+#: frontend/templates/frontend/history.html:13
+#: frontend/templates/frontend/history.html:17
+msgid "History"
+msgstr ""
+
+#: frontend/templates/base.html:96 frontend/templates/frontend/donation.html:16
+#: frontend/templates/frontend/member.html:16
+msgid "Contribute"
+msgstr ""
+
+#: frontend/templates/base.html:98
+msgid "Donations"
+msgstr ""
+
+#: frontend/templates/base.html:99 frontend/templates/frontend/member.html:6
+#: frontend/templates/frontend/member.html:13
+#: frontend/templates/frontend/member.html:17
+msgid "Member"
+msgstr ""
+
+#: frontend/templates/base.html:103 notice/templates/notice/post/detail.html:39
+#: notice/templates/notice/post/list.html:7
+#: notice/templates/notice/post/list.html:23
+#: notice/templates/notice/post/list.html:28
+msgid "Notice"
+msgstr ""
+
+#: frontend/templates/base.html:106 frontend/templates/base.html:172
+#: frontend/templates/frontend/contact.html:6
+#: frontend/templates/frontend/contact.html:13
+#: frontend/templates/frontend/contact.html:16
+msgid "Contact"
+msgstr ""
+
+#: frontend/templates/base.html:117
+msgid "Language :"
+msgstr ""
+
+#: frontend/templates/base.html:145 frontend/templates/frontend/about.html:13
+#: frontend/templates/frontend/about.html:16
+#: frontend/templates/frontend/history.html:16
+msgid "About"
+msgstr ""
+
+#: frontend/templates/base.html:159
+msgid " Explore"
+msgstr ""
+
+#: frontend/templates/base.html:161
+msgid " About"
+msgstr ""
+
+#: frontend/templates/base.html:162
+msgid " Member"
+msgstr ""
+
+#: frontend/templates/base.html:163 frontend/templates/frontend/donation.html:6
+#: frontend/templates/frontend/donation.html:13
+#: frontend/templates/frontend/donation.html:17
+msgid "Donation"
+msgstr ""
+
+#: frontend/templates/base.html:164
+msgid "Join Our Community"
+msgstr ""
+
+#: frontend/templates/base.html:165
+msgid "Latest News"
+msgstr ""
+
+#: frontend/templates/base.html:176
+msgid "666 888 000"
+msgstr ""
+
+#: frontend/templates/base.html:184
+msgid "22 Broklyn Street 30 Road. New "
+msgstr ""
+
+#: frontend/templates/base.html:184
+msgid " York United States"
+msgstr ""
+
+#: frontend/templates/base.html:195
+msgid " copyright 2022 by "
+msgstr ""
+
+#: frontend/templates/frontend/about.html:33
+#: frontend/templates/frontend/index.html:135
+msgid "About Nagarik Unmukti Party"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:34
+msgid "Get to Know Nagarik Unmukti Party"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:36
+#: frontend/templates/frontend/index.html:24
+#: frontend/templates/frontend/index.html:152
+#: frontend/templates/frontend/index.html:248
+msgid ""
+"At the heart of the theory and practice is our belief that citizens should "
+"participate in the political process"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:44
+msgid "Join Campaigns"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:45
+#: frontend/templates/frontend/index.html:236
+msgid "We Will Make <br> History Together"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:61
+#: frontend/templates/frontend/index.html:40
+#: frontend/templates/frontend/index.html:106
+msgid "To not keep our voices steady. Let's shake hands"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:104
+#: frontend/templates/frontend/index.html:161
+msgid "Join the Fight for Freedom"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:105
+#: frontend/templates/frontend/index.html:162
+msgid "Help us Bring <br> the Change we Need"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:106
+#: frontend/templates/frontend/index.html:163
+msgid "Become a Member"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:145
+msgid "Our Party People"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:146
+msgid "Meet the Team"
+msgstr ""
+
+#: frontend/templates/frontend/about.html:206
+#: frontend/templates/frontend/history.html:57
+#: frontend/templates/frontend/member.html:74
+msgid "Let's make a difference! Donate our campaign."
+msgstr ""
+
+#: frontend/templates/frontend/about.html:208
+#: frontend/templates/frontend/history.html:59
+#: frontend/templates/frontend/index.html:26
+#: frontend/templates/frontend/index.html:42
+#: frontend/templates/frontend/index.html:58
+#: frontend/templates/frontend/member.html:76
+msgid "Discover More"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:29
+msgid "22 Broklyn Street, USA"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:57
+msgid "Contact With Us"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:58
+msgid "Leave a Message"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:63
+#: notice/templates/notice/post/detail.html:131
+msgid "Your Name"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:66
+#: frontend/templates/frontend/donation.html:68
+msgid "Email Address"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:69
+msgid "Write Message"
+msgstr ""
+
+#: frontend/templates/frontend/contact.html:71
+msgid "Send Message"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:26
+#: frontend/templates/frontend/donation.html:38
+msgid "Payment Info"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:29
+msgid "Rs"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:43
+msgid "Online Payment"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:47
+msgid "Offline Payment"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:50
+msgid "Recurrence"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:51
+msgid "Monthly"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:52
+msgid "Yearly"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:59
+msgid "Personal Info"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:62
+msgid "First Name"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:65
+msgid "Last Name"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:71
+msgid "Phone"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:74
+msgid "Address"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:78
+msgid "Nepal"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:79
+msgid "India"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:80
+msgid "USA"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:84
+msgid "Describe Yourself"
+msgstr ""
+
+#: frontend/templates/frontend/donation.html:86
+msgid "Submit Donation"
+msgstr ""
+
+#: frontend/templates/frontend/history.html:50
+#: frontend/templates/frontend/index.html:119
+msgid "People have joined the campaigns"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:22
+msgid "Vote"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:23
+msgid "Always for democratic principles and behavior"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:38
+msgid "In matters of freedom "
+msgstr ""
+
+#: frontend/templates/frontend/index.html:39
+msgid "Join every day"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:54
+msgid "Your vote is the "
+msgstr ""
+
+#: frontend/templates/frontend/index.html:55
+msgid "Power of Democracy"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:56
+msgid "People need truth, Our goal is stability"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:73 nkm/settings.py:166
+#: nkm/settings.py:167
+msgid "Nagarik Unmukti Party"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:74
+msgid "We can build <br> better future together "
+msgstr ""
+
+#: frontend/templates/frontend/index.html:79
+msgid ""
+"Synonymous with glorious history, responsible present and a bright secure "
+"future."
+msgstr ""
+
+#: frontend/templates/frontend/index.html:83
+msgid ""
+"Seven decades of relentless struggle for nationalism, democracy and "
+"socialism."
+msgstr ""
+
+#: frontend/templates/frontend/index.html:87
+msgid ""
+"The Nagarik Unmukti Party is a movement that is determined to build a "
+"prosperous Nepal based on the ideas and culture of the epoch maker Resham "
+"Chaudhary"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:104
+msgid "Vote Status"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:107
+#: frontend/templates/frontend/index.html:153
+msgid "Learn More"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:136
+msgid "Mission and Vision"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:141
+msgid "Civil Rights <br> Attorney"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:145
+msgid "Majored in <br> Political"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:149
+msgid "Political<br> Solutions"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:170
+msgid "Contribute to help us win"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:181
+msgid "Donate"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:193
+msgid "Policy Positions"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:194
+msgid "Campaign Principles"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:200
+msgid "Environment"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:206
+msgid "Healthcare"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:212
+msgid "Tax Returns"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:218
+msgid "Economy"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:224
+msgid "Education"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:228
+msgid "How we can build a better country together"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:228
+msgid "Donate or be Member."
+msgstr ""
+
+#: frontend/templates/frontend/index.html:235
+msgid "Join  Campaigns"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:283
+msgid "Leader"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:290
+msgid "Watch Campaigns "
+msgstr ""
+
+#: frontend/templates/frontend/index.html:319
+msgid "Don't miss our monthly updates"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:324
+msgid "Subscribe"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:337
+msgid "Nagarik Unmukti Party Updates"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:338
+msgid "From Campaign"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:356
+#: notice/templates/notice/post/list.html:88
+msgid "Read More"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:385
+msgid "Facebook"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:386
+msgid "280,366"
+msgstr ""
+
+#: frontend/templates/frontend/index.html:392
+msgid "Latest Tweets"
+msgstr ""
+
+#: frontend/templates/frontend/member.html:39
+msgid "Become a Member "
+msgstr ""
+
+#: frontend/templates/frontend/member.html:40
+msgid "Apply & Join Us Today"
+msgstr ""
+
+#: frontend/templates/frontend/member.html:63
+msgid "Send Request"
+msgstr ""
+
+#: nkm/settings.py:128
+msgid "Nepali"
+msgstr ""
+
+#: nkm/settings.py:129
+msgid "English"
+msgstr ""
+
+#: notice/models.py:22
+msgid "draft"
+msgstr ""
+
+#: notice/models.py:23
+msgid "published"
+msgstr ""
+
+#: notice/models.py:36
+msgid "body"
+msgstr ""
+
+#: notice/models.py:42 notice/models.py:43
+msgid "notice"
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:65
+msgid "Read PDF File"
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:73
+msgid "Tags: "
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:111
+msgid "There are no comments yet. "
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:115
+msgid "Your comment is added"
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:117
+msgid "Leave a Comment"
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:135
+msgid "Your Email"
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:139
+msgid "Comment"
+msgstr ""
+
+#: notice/templates/notice/post/detail.html:141
+msgid "Submit Comment"
+msgstr ""
+
+#: notice/templates/notice/post/sidebar.html:7
+msgid "Search"
+msgstr ""
+
+#: notice/templates/notice/post/sidebar.html:9
+msgid "Search here..."
+msgstr ""
+
+#: notice/templates/notice/post/sidebar.html:14
+msgid "Latest Notices"
+msgstr ""
+
+#: notice/templates/notice/post/sidebar.html:37
+msgid "Tags"
+msgstr ""

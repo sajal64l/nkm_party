@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+<title>{% trans "Donation" %}</title>
+{% endblock %}
+
+{% block content %} 
+
+<section class="inner-banner">
+    <div class="container">
+        <h2 class="inner-banner__title">{% trans "Donation" %}</h2><!-- /.inner-banner__title -->
+        <ul class="list-unstyled thm-breadcrumb">
+            <li><a href="{% url 'index' %}">{% trans "Home" %}</a></li>
+            <li><a href="#">{% trans "Contribute" %}</a></li>
+            <li>{% trans "Donation" %}</li>
+        </ul><!-- /.list-unstyled -->
+    </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<section class="contact-form-one donation-page">
+    <div class="container">
+        <form action="inc/sendemail.php" class="contact-form-one__form contact-form-validated">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3 class="donation-page__title">{% trans "Payment Info" %}</h3>
+                    <div class="donation-page__amount">
+                        <select class="selectpicker">
+                            <option>{% trans "Rs" %}</option>
+                            <option>$</option>
+                        </select>
+                        <input type="text" name="donation-money" value=".00">
+                    </div><!-- /.donation-page__amount -->
+                </div><!-- /.col-lg-9 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-lg-5">
+                    <h3 class="donation-page__title">{% trans "Payment Info" %}</h3>
+
+                    <div class="donation-page__payment-time">
+                        <p>
+                            <input type="radio" id="test1" name="radio-group" checked>
+                            <label for="test1">{% trans "Online Payment" %}</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="test2" name="radio-group">
+                            <label for="test2">{% trans "Offline Payment" %}</label>
+                        </p>
+                        <select class="selectpicker">
+                            <option>{% trans "Recurrence" %}</option>
+                            <option>{% trans "Monthly" %}</option>
+                            <option>{% trans "Yearly" %}</option>
+                        </select>
+                    </div><!-- /.donation-page__payment-time -->
+                </div><!-- /.col-lg-5 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3 class="donation-page__title">{% trans "Personal Info" %}</h3>
+                    <div class="row low-gutters">
+                        <div class="col-lg-6">
+                            <input type="text" name="fname" placeholder="{% trans 'First Name' %}">
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <input type="text" name="lname" placeholder="{% trans 'Last Name' %}">
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <input type="text" name="email" placeholder="{% trans 'Email Address' %}">
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <input type="text" name="phone" placeholder="{% trans 'Phone' %}">
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <input type="text" name="address" placeholder="{% trans 'Address' %}">
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-6">
+                            <select class="selectpicker">
+                                <option>{% trans "Nepal" %}</option>
+                                <option>{% trans "India" %}</option>
+                                <option>{% trans "USA" %}</option>
+                            </select>
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-12">
+                            <textarea name="message" placeholder="{% trans 'Describe Yourself' %}"></textarea>
+                            <div class="text-left">
+                                <button type="submit" class="thm-btn contact-form-one__btn">{% trans "Submit Donation" %}</button>
+                            </div><!-- /.text-center -->
+                        </div><!-- /.col-lg-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.col-lg-9 -->
+            </div><!-- /.row -->
+        </form><!-- /.contact-form-one__form -->
+        <div class="result"></div><!-- /.result -->
+    </div><!-- /.container -->
+</section>
+
+{% endblock %}

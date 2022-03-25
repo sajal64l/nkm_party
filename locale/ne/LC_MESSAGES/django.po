@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-25 18:20+0545\n"
-"PO-Revision-Date: 2022-03-25 12:36+0000\n"
+"POT-Creation-Date: 2022-03-25 22:46+0545\n"
+"PO-Revision-Date: 2022-03-25 17:07+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -176,7 +176,6 @@ msgid "gallerys"
 msgstr "तस्बिर संग्रहालय"
 
 #: frontend/models.py:85 frontend/models.py:86
-#| msgid "Facebook"
 msgid "Facebook share url"
 msgstr "फेसबुक साझा यूआरएल"
 
@@ -203,34 +202,55 @@ msgstr "सामेल हुनुहोस्"
 msgid "Home"
 msgstr "घर"
 
-#: frontend/templates/base.html:89 frontend/templates/base.html:91
-#: frontend/templates/frontend/about.html:6
+#: frontend/templates/base.html:89 frontend/templates/frontend/about.html:6
 msgid "About Us"
 msgstr "हाम्रो बारेमा"
 
-#: frontend/templates/base.html:92 frontend/templates/frontend/history.html:6
+#: frontend/templates/base.html:92
+#| msgid "education"
+msgid "Collection"
+msgstr "संग्रह "
+
+#: frontend/templates/base.html:94
+msgid "Party Documents"
+msgstr "पार्टी दस्ताबेज"
+
+#: frontend/templates/base.html:95
+msgid "Library"
+msgstr "पुस्तकालय"
+
+#: frontend/templates/base.html:96 frontend/templates/frontend/history.html:6
 #: frontend/templates/frontend/history.html:13
 #: frontend/templates/frontend/history.html:17
 msgid "History"
 msgstr "इतिहास"
 
-#: frontend/templates/base.html:96
+#: frontend/templates/base.html:100
 #: frontend/templates/frontend/donation.html:16
 #: frontend/templates/frontend/member.html:16
 msgid "Contribute"
 msgstr "योगदान गर्नुहोस्"
 
-#: frontend/templates/base.html:98
+#: frontend/templates/base.html:102
 msgid "Donations"
 msgstr "दान"
 
-#: frontend/templates/base.html:99 frontend/templates/frontend/member.html:6
+#: frontend/templates/base.html:103 frontend/templates/frontend/member.html:6
 #: frontend/templates/frontend/member.html:13
 #: frontend/templates/frontend/member.html:17
 msgid "Member"
 msgstr "सदस्य"
 
-#: frontend/templates/base.html:103
+#: frontend/templates/base.html:107
+msgid "Declaration Letter"
+msgstr "घोषणा पत्र"
+
+#: frontend/templates/base.html:110
+#| msgid "Comment"
+msgid "Movement"
+msgstr "आन्दोलन"
+
+#: frontend/templates/base.html:113
 #: notice/templates/notice/post/detail.html:39
 #: notice/templates/notice/post/list.html:7
 #: notice/templates/notice/post/list.html:23
@@ -238,63 +258,63 @@ msgstr "सदस्य"
 msgid "Notice"
 msgstr "सूचना"
 
-#: frontend/templates/base.html:106 frontend/templates/base.html:172
+#: frontend/templates/base.html:116 frontend/templates/base.html:182
 #: frontend/templates/frontend/contact.html:6
 #: frontend/templates/frontend/contact.html:13
 #: frontend/templates/frontend/contact.html:16
 msgid "Contact"
 msgstr "सम्पर्क गर्नुहोस्"
 
-#: frontend/templates/base.html:117
+#: frontend/templates/base.html:127
 msgid "Language :"
 msgstr "भाषा :"
 
-#: frontend/templates/base.html:145 frontend/templates/frontend/about.html:13
+#: frontend/templates/base.html:155 frontend/templates/frontend/about.html:13
 #: frontend/templates/frontend/about.html:16
 #: frontend/templates/frontend/history.html:16
 msgid "About"
 msgstr "हाम्रो बारेमा"
 
-#: frontend/templates/base.html:159
+#: frontend/templates/base.html:169
 msgid " Explore"
 msgstr "अन्वेषण गर्नुहोस्"
 
-#: frontend/templates/base.html:161
+#: frontend/templates/base.html:171
 msgid " About"
 msgstr "हाम्रो बारेमा"
 
-#: frontend/templates/base.html:162
+#: frontend/templates/base.html:172
 msgid " Member"
 msgstr "सदस्य"
 
-#: frontend/templates/base.html:163
+#: frontend/templates/base.html:173
 #: frontend/templates/frontend/donation.html:6
 #: frontend/templates/frontend/donation.html:13
 #: frontend/templates/frontend/donation.html:17
 msgid "Donation"
 msgstr "दान"
 
-#: frontend/templates/base.html:164
+#: frontend/templates/base.html:174
 msgid "Join Our Community"
 msgstr "हाम्रो समुदायमा सामेल हुनुहोस्"
 
-#: frontend/templates/base.html:165
+#: frontend/templates/base.html:175
 msgid "Latest News"
 msgstr "नवीनतम समाचार"
 
-#: frontend/templates/base.html:176
+#: frontend/templates/base.html:186
 msgid "666 888 000"
 msgstr "६६६ ८८८ ०००"
 
-#: frontend/templates/base.html:184
+#: frontend/templates/base.html:194
 msgid "22 Broklyn Street 30 Road. New "
 msgstr "22 ब्रोक्लिन स्ट्रीट 30 रोड। नयाँ"
 
-#: frontend/templates/base.html:184
+#: frontend/templates/base.html:194
 msgid " York United States"
 msgstr "योर्क संयुक्त राज्य अमेरिका"
 
-#: frontend/templates/base.html:195
+#: frontend/templates/base.html:205
 msgid " copyright 2022 by "
 msgstr "प्रतिलिपि अधिकार २०२२ द्वारा"
 
@@ -348,21 +368,21 @@ msgstr "हामीलाई चाहिने परिवर्तन <br> �
 msgid "Become a Member"
 msgstr "सदस्य बन्नुहोस्"
 
-#: frontend/templates/frontend/about.html:145
+#: frontend/templates/frontend/about.html:115
 msgid "Our Party People"
 msgstr "हाम्रो पार्टीका जनता"
 
-#: frontend/templates/frontend/about.html:146
+#: frontend/templates/frontend/about.html:116
 msgid "Meet the Team"
 msgstr "टोलीलाई भेट्नुहोस्"
 
-#: frontend/templates/frontend/about.html:206
+#: frontend/templates/frontend/about.html:176
 #: frontend/templates/frontend/history.html:57
 #: frontend/templates/frontend/member.html:74
 msgid "Let's make a difference! Donate our campaign."
 msgstr "फरक पारौं! हाम्रो अभियानमा दान गर्नुहोस्।"
 
-#: frontend/templates/frontend/about.html:208
+#: frontend/templates/frontend/about.html:178
 #: frontend/templates/frontend/history.html:59
 #: frontend/templates/frontend/index.html:26
 #: frontend/templates/frontend/index.html:42
@@ -645,7 +665,6 @@ msgid "280,366"
 msgstr "२८०,३६६"
 
 #: frontend/templates/frontend/index.html:392
-#| msgid "Facebook"
 msgid "Top Facebook Posts"
 msgstr "शीर्ष फेसबुक पोस्टहरू"
 

@@ -24,6 +24,10 @@ def index(request):
     return render(request, 'frontend/index.html', context)
 
 def about(request):
+    # url = Facebook.objects.all()[:5]
+    # context = {
+    #     'url':url,
+    # }
     return render(request, 'frontend/about.html')
 
 def history(request):

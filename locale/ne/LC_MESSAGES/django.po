@@ -215,6 +215,7 @@ msgstr "संग्रह "
 msgid "Party Documents"
 msgstr "पार्टी दस्ताबेज"
 
+
 #: frontend/templates/base.html:95
 msgid "Library"
 msgstr "पुस्तकालय"

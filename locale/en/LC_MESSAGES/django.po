@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-25 22:46+0545\n"
+"POT-Creation-Date: 2022-03-26 00:02+0545\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,87 +182,76 @@ msgstr ""
 msgid "9851249954"
 msgstr ""
 
-#: frontend/templates/base.html:63
+#: frontend/templates/base.html:64
 msgid "Donate Now"
 msgstr ""
 
-#: frontend/templates/base.html:64
+#: frontend/templates/base.html:65
 msgid "Join Us"
 msgstr ""
 
-#: frontend/templates/base.html:86 frontend/templates/frontend/about.html:15
-#: frontend/templates/frontend/contact.html:15
-#: frontend/templates/frontend/donation.html:15
-#: frontend/templates/frontend/history.html:15
-#: frontend/templates/frontend/index.html:6
-#: frontend/templates/frontend/member.html:15
-#: notice/templates/notice/post/detail.html:38
-#: notice/templates/notice/post/list.html:27
-msgid "Home"
+#: frontend/templates/base.html:72
+msgid "Language :"
 msgstr ""
 
-#: frontend/templates/base.html:89 frontend/templates/frontend/about.html:6
+#: frontend/templates/base.html:104 frontend/templates/frontend/about.html:6
 msgid "About Us"
 msgstr ""
 
-#: frontend/templates/base.html:92
-msgid "Collection"
-msgstr ""
-
-#: frontend/templates/base.html:94
-msgid "Party Documents"
-msgstr ""
-
-#: frontend/templates/base.html:95
-msgid "Library"
-msgstr ""
-
-#: frontend/templates/base.html:96 frontend/templates/frontend/history.html:6
-#: frontend/templates/frontend/history.html:13
-#: frontend/templates/frontend/history.html:17
-msgid "History"
-msgstr ""
-
-#: frontend/templates/base.html:100
-#: frontend/templates/frontend/donation.html:16
-#: frontend/templates/frontend/member.html:16
-msgid "Contribute"
-msgstr ""
-
-#: frontend/templates/base.html:102
-msgid "Donations"
-msgstr ""
-
-#: frontend/templates/base.html:103 frontend/templates/frontend/member.html:6
-#: frontend/templates/frontend/member.html:13
-#: frontend/templates/frontend/member.html:17
-msgid "Member"
-msgstr ""
-
-#: frontend/templates/base.html:107
-msgid "Declaration Letter"
-msgstr ""
-
-#: frontend/templates/base.html:110
-msgid "Movement"
-msgstr ""
-
-#: frontend/templates/base.html:113 notice/templates/notice/post/detail.html:39
+#: frontend/templates/base.html:107 notice/templates/notice/post/detail.html:39
 #: notice/templates/notice/post/list.html:7
 #: notice/templates/notice/post/list.html:23
 #: notice/templates/notice/post/list.html:28
 msgid "Notice"
 msgstr ""
 
-#: frontend/templates/base.html:116 frontend/templates/base.html:182
+#: frontend/templates/base.html:110
+msgid "Movement"
+msgstr ""
+
+#: frontend/templates/base.html:113
+msgid "Declaration Letter"
+msgstr ""
+
+#: frontend/templates/base.html:116
+#: frontend/templates/frontend/donation.html:16
+#: frontend/templates/frontend/member.html:16
+msgid "Contribute"
+msgstr ""
+
+#: frontend/templates/base.html:118
+msgid "Donations"
+msgstr ""
+
+#: frontend/templates/base.html:119 frontend/templates/frontend/member.html:6
+#: frontend/templates/frontend/member.html:13
+#: frontend/templates/frontend/member.html:17
+msgid "Member"
+msgstr ""
+
+#: frontend/templates/base.html:123
+msgid "Collection"
+msgstr ""
+
+#: frontend/templates/base.html:125
+msgid "Party Documents"
+msgstr ""
+
+#: frontend/templates/base.html:126
+msgid "Library"
+msgstr ""
+
+#: frontend/templates/base.html:127 frontend/templates/frontend/history.html:6
+#: frontend/templates/frontend/history.html:13
+#: frontend/templates/frontend/history.html:17
+msgid "History"
+msgstr ""
+
+#: frontend/templates/base.html:132 frontend/templates/base.html:182
 #: frontend/templates/frontend/contact.html:6
 #: frontend/templates/frontend/contact.html:13
 #: frontend/templates/frontend/contact.html:16
 msgid "Contact"
-msgstr ""
-
-#: frontend/templates/base.html:127
-msgid "Language :"
 msgstr ""
 
 #: frontend/templates/base.html:155 frontend/templates/frontend/about.html:13
@@ -311,6 +300,17 @@ msgstr ""
 
 #: frontend/templates/base.html:205
 msgid " copyright 2022 by "
+msgstr ""
+
+#: frontend/templates/frontend/about.html:15
+#: frontend/templates/frontend/contact.html:15
+#: frontend/templates/frontend/donation.html:15
+#: frontend/templates/frontend/history.html:15
+#: frontend/templates/frontend/index.html:6
+#: frontend/templates/frontend/member.html:15
+#: notice/templates/notice/post/detail.html:38
+#: notice/templates/notice/post/list.html:27
+msgid "Home"
 msgstr ""
 
 #: frontend/templates/frontend/about.html:33

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-25 22:46+0545\n"
+"POT-Creation-Date: 2022-03-26 00:02+0545\n"
 "PO-Revision-Date: 2022-03-25 17:07+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,92 +183,77 @@ msgstr "फेसबुक साझा यूआरएल"
 msgid "9851249954"
 msgstr "९८५१२४९९५४ "
 
-#: frontend/templates/base.html:63
+#: frontend/templates/base.html:64
 msgid "Donate Now"
 msgstr "दान गर्नुहोस्"
 
-#: frontend/templates/base.html:64
+#: frontend/templates/base.html:65
 msgid "Join Us"
 msgstr "सामेल हुनुहोस्"
 
-#: frontend/templates/base.html:86 frontend/templates/frontend/about.html:15
-#: frontend/templates/frontend/contact.html:15
-#: frontend/templates/frontend/donation.html:15
-#: frontend/templates/frontend/history.html:15
-#: frontend/templates/frontend/index.html:6
-#: frontend/templates/frontend/member.html:15
-#: notice/templates/notice/post/detail.html:38
-#: notice/templates/notice/post/list.html:27
-msgid "Home"
-msgstr "घर"
+#: frontend/templates/base.html:72
+msgid "Language :"
+msgstr "भाषा :"
 
-#: frontend/templates/base.html:89 frontend/templates/frontend/about.html:6
+#: frontend/templates/base.html:104 frontend/templates/frontend/about.html:6
 msgid "About Us"
 msgstr "हाम्रो बारेमा"
 
-#: frontend/templates/base.html:92
-#| msgid "education"
-msgid "Collection"
-msgstr "संग्रह "
-
-#: frontend/templates/base.html:94
-msgid "Party Documents"
-msgstr "पार्टी दस्ताबेज"
-
-
-#: frontend/templates/base.html:95
-msgid "Library"
-msgstr "पुस्तकालय"
-
-#: frontend/templates/base.html:96 frontend/templates/frontend/history.html:6
-#: frontend/templates/frontend/history.html:13
-#: frontend/templates/frontend/history.html:17
-msgid "History"
-msgstr "इतिहास"
-
-#: frontend/templates/base.html:100
-#: frontend/templates/frontend/donation.html:16
-#: frontend/templates/frontend/member.html:16
-msgid "Contribute"
-msgstr "योगदान गर्नुहोस्"
-
-#: frontend/templates/base.html:102
-msgid "Donations"
-msgstr "दान"
-
-#: frontend/templates/base.html:103 frontend/templates/frontend/member.html:6
-#: frontend/templates/frontend/member.html:13
-#: frontend/templates/frontend/member.html:17
-msgid "Member"
-msgstr "सदस्य"
-
-#: frontend/templates/base.html:107
-msgid "Declaration Letter"
-msgstr "घोषणा पत्र"
-
-#: frontend/templates/base.html:110
-#| msgid "Comment"
-msgid "Movement"
-msgstr "आन्दोलन"
-
-#: frontend/templates/base.html:113
-#: notice/templates/notice/post/detail.html:39
+#: frontend/templates/base.html:107 notice/templates/notice/post/detail.html:39
 #: notice/templates/notice/post/list.html:7
 #: notice/templates/notice/post/list.html:23
 #: notice/templates/notice/post/list.html:28
 msgid "Notice"
 msgstr "सूचना"
 
-#: frontend/templates/base.html:116 frontend/templates/base.html:182
+#: frontend/templates/base.html:110
+msgid "Movement"
+msgstr "आन्दोलन"
+
+#: frontend/templates/base.html:113
+msgid "Declaration Letter"
+msgstr "घोषणा पत्र"
+
+#: frontend/templates/base.html:116
+#: frontend/templates/frontend/donation.html:16
+#: frontend/templates/frontend/member.html:16
+msgid "Contribute"
+msgstr "योगदान गर्नुहोस्"
+
+#: frontend/templates/base.html:118
+msgid "Donations"
+msgstr "दान"
+
+#: frontend/templates/base.html:119 frontend/templates/frontend/member.html:6
+#: frontend/templates/frontend/member.html:13
+#: frontend/templates/frontend/member.html:17
+msgid "Member"
+msgstr "सदस्य"
+
+#: frontend/templates/base.html:123
+msgid "Collection"
+msgstr "संग्रह "
+
+#: frontend/templates/base.html:125
+msgid "Party Documents"
+msgstr "पार्टी दस्ताबेज"
+
+#: frontend/templates/base.html:126
+msgid "Library"
+msgstr "पुस्तकालय"
+
+#: frontend/templates/base.html:127 frontend/templates/frontend/history.html:6
+#: frontend/templates/frontend/history.html:13
+#: frontend/templates/frontend/history.html:17
+msgid "History"
+msgstr "इतिहास"
+
+#: frontend/templates/base.html:132 frontend/templates/base.html:182
 #: frontend/templates/frontend/contact.html:6
 #: frontend/templates/frontend/contact.html:13
 #: frontend/templates/frontend/contact.html:16
 msgid "Contact"
 msgstr "सम्पर्क गर्नुहोस्"
-
-#: frontend/templates/base.html:127
-msgid "Language :"
-msgstr "भाषा :"
 
 #: frontend/templates/base.html:155 frontend/templates/frontend/about.html:13
 #: frontend/templates/frontend/about.html:16
@@ -288,8 +273,7 @@ msgstr "हाम्रो बारेमा"
 msgid " Member"
 msgstr "सदस्य"
 
-#: frontend/templates/base.html:173
-#: frontend/templates/frontend/donation.html:6
+#: frontend/templates/base.html:173 frontend/templates/frontend/donation.html:6
 #: frontend/templates/frontend/donation.html:13
 #: frontend/templates/frontend/donation.html:17
 msgid "Donation"
@@ -319,6 +303,17 @@ msgstr "योर्क संयुक्त राज्य अमेरिक
 msgid " copyright 2022 by "
 msgstr "प्रतिलिपि अधिकार २०२२ द्वारा"
 
+#: frontend/templates/frontend/about.html:15
+#: frontend/templates/frontend/contact.html:15
+#: frontend/templates/frontend/donation.html:15
+#: frontend/templates/frontend/history.html:15
+#: frontend/templates/frontend/index.html:6
+#: frontend/templates/frontend/member.html:15
+#: notice/templates/notice/post/detail.html:38
+#: notice/templates/notice/post/list.html:27
+msgid "Home"
+msgstr "घर"
+
 #: frontend/templates/frontend/about.html:33
 #: frontend/templates/frontend/index.html:135
 msgid "About Nagarik Unmukti Party"
@@ -336,8 +331,8 @@ msgid ""
 "At the heart of the theory and practice is our belief that citizens should "
 "participate in the political process"
 msgstr ""
-"सिद्धान्त र व्यवहारको केन्द्रविन्दुमा नागरिक राजनीतिक प्रक्रियामा सहभागी "
-"हुनुपर्छ भन्ने हाम्रो मान्यता हो"
+"सिद्धान्त र व्यवहारको केन्द्रविन्दुमा नागरिक राजनीतिक प्रक्रियामा सहभागी हुनुपर्छ भन्ने "
+"हाम्रो मान्यता हो"
 
 #: frontend/templates/frontend/about.html:44
 msgid "Join Campaigns"
@@ -537,8 +532,7 @@ msgstr "हामी मिलेर राम्रो <br> भविष्य 
 msgid ""
 "Synonymous with glorious history, responsible present and a bright secure "
 "future."
-msgstr ""
-"गौरवमय इतिहास, जिम्मेवार वर्तमान र उज्यालो सुनिश्चित भविष्य’को पर्यायवाची।"
+msgstr "गौरवमय इतिहास, जिम्मेवार वर्तमान र उज्यालो सुनिश्चित भविष्य’को पर्यायवाची।"
 
 #: frontend/templates/frontend/index.html:83
 msgid ""
@@ -552,8 +546,8 @@ msgid ""
 "prosperous Nepal based on the ideas and culture of the epoch maker Resham "
 "Chaudhary"
 msgstr ""
-"रेशम चौधरीको विचार र संस्कारको जगमा समुन्नत नेपाल निर्माणका लागि दृढ अठोट "
-"राख्ने आन्दोलन हो नागरिक उन्मुक्ति पार्टी।"
+"रेशम चौधरीको विचार र संस्कारको जगमा समुन्नत नेपाल निर्माणका लागि दृढ अठोट राख्ने "
+"आन्दोलन हो नागरिक उन्मुक्ति पार्टी।"
 
 #: frontend/templates/frontend/index.html:104
 msgid "Vote Status"

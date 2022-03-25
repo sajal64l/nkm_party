@@ -60,8 +60,26 @@
                         <a href="tel:9851249954">{% trans "9851249954" %}</a>
                     </div><!-- /.topbar-one__left -->
                     <div class="topbar-one__right">
+                        
                         <a href="{% url 'donation' %}"><i class="fa fa-money"></i>{% trans "Donate Now" %}</a>
                         <a href="{% url 'member' %}"><i class="fa fa-user-o"></i>{% trans "Join Us" %}</a>
+                        {% get_current_language as CURRENT_LANGUAGE %}
+                        {% get_available_languages as AVAILABLE_LANGUAGES %}
+                        {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                            
+                        <div class="right-side-box" style="margin-left: 20px;">
+                            <div class="header-social">
+                                <div class="mr-2">{% trans "Language :" %}</div>
+                                
+                                    {% for language in languages %} 
+                                    
+                                        <a href="/{{ language.code }}/" style="width: 50px;"
+                                        {% if language.code == CURRENT_LANGUAGE %} class="lang-active"{% endif %}>
+                                        {{ language.name_local }}
+                                        </a>
+                                    {% endfor %}
+                            </div><!-- /.header-social -->
+                        </div><!-- /.right-side-box -->
                     </div><!-- /.topbar-one__right -->
                 </div><!-- /.inner-container -->
             </div><!-- /.container -->
@@ -119,23 +137,7 @@
                         </ul>
                     </div><!-- /.navbar-collapse -->
                   
-                    {% get_current_language as CURRENT_LANGUAGE %}
-                    {% get_available_languages as AVAILABLE_LANGUAGES %}
-                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
-                        
-                    <div class="right-side-box">
-                        <div class="header-social">
-                            <div class="mr-2">{% trans "Language :" %}</div>
-                            
-                                {% for language in languages %} 
-                                
-                                    <a href="/{{ language.code }}/" style="width: 50px;"
-                                    {% if language.code == CURRENT_LANGUAGE %} class="lang-active"{% endif %}>
-                                    {{ language.name_local }}
-                                    </a>
-                                {% endfor %}
-                        </div><!-- /.header-social -->
-                    </div><!-- /.right-side-box -->
+                  
                 </div>
                 <!-- /.container -->
             </nav>

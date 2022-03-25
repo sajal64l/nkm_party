@@ -77,3 +77,10 @@ class Gallery(models.Model):
     class Meta:
         verbose_name = _('gallery')
         verbose_name_plural = _('gallerys')
+
+class Facebook(models.Model):
+    url = models.URLField()
+
+    class Meta:
+        verbose_name = _('Facebook share url')
+        verbose_name_plural = _('Facebook share url')

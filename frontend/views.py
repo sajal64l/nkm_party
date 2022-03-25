@@ -12,12 +12,14 @@ def index(request):
     speech = Speech.objects.all()[:4]
     history = History.objects.all()[:3]
     faq = FAQ.objects.all()[:3]
+    url = Facebook.objects.all()[:5]
     context = {
         'gallery':gallery,
         'posts':posts,
         'speech':speech,
         'history' :history,
         'faq':faq,
+        'url':url,
     }
     return render(request, 'frontend/index.html', context)
 

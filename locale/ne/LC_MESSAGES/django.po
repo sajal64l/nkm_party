@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-23 04:42+0545\n"
-"PO-Revision-Date: 2022-03-16 18:25+0000\n"
+"POT-Creation-Date: 2022-03-25 18:20+0545\n"
+"PO-Revision-Date: 2022-03-25 12:36+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -175,6 +175,11 @@ msgstr "तस्बिर संग्रहालय"
 msgid "gallerys"
 msgstr "तस्बिर संग्रहालय"
 
+#: frontend/models.py:85 frontend/models.py:86
+#| msgid "Facebook"
+msgid "Facebook share url"
+msgstr "फेसबुक साझा यूआरएल"
+
 #: frontend/templates/base.html:60 frontend/templates/frontend/contact.html:37
 msgid "9851249954"
 msgstr "९८५१२४९९५४ "
@@ -209,7 +214,8 @@ msgstr "हाम्रो बारेमा"
 msgid "History"
 msgstr "इतिहास"
 
-#: frontend/templates/base.html:96 frontend/templates/frontend/donation.html:16
+#: frontend/templates/base.html:96
+#: frontend/templates/frontend/donation.html:16
 #: frontend/templates/frontend/member.html:16
 msgid "Contribute"
 msgstr "योगदान गर्नुहोस्"
@@ -224,7 +230,8 @@ msgstr "दान"
 msgid "Member"
 msgstr "सदस्य"
 
-#: frontend/templates/base.html:103 notice/templates/notice/post/detail.html:39
+#: frontend/templates/base.html:103
+#: notice/templates/notice/post/detail.html:39
 #: notice/templates/notice/post/list.html:7
 #: notice/templates/notice/post/list.html:23
 #: notice/templates/notice/post/list.html:28
@@ -260,7 +267,8 @@ msgstr "हाम्रो बारेमा"
 msgid " Member"
 msgstr "सदस्य"
 
-#: frontend/templates/base.html:163 frontend/templates/frontend/donation.html:6
+#: frontend/templates/base.html:163
+#: frontend/templates/frontend/donation.html:6
 #: frontend/templates/frontend/donation.html:13
 #: frontend/templates/frontend/donation.html:17
 msgid "Donation"
@@ -307,8 +315,8 @@ msgid ""
 "At the heart of the theory and practice is our belief that citizens should "
 "participate in the political process"
 msgstr ""
-"सिद्धान्त र व्यवहारको केन्द्रविन्दुमा नागरिक राजनीतिक प्रक्रियामा सहभागी हुनुपर्छ भन्ने "
-"हाम्रो मान्यता हो"
+"सिद्धान्त र व्यवहारको केन्द्रविन्दुमा नागरिक राजनीतिक प्रक्रियामा सहभागी "
+"हुनुपर्छ भन्ने हाम्रो मान्यता हो"
 
 #: frontend/templates/frontend/about.html:44
 msgid "Join Campaigns"
@@ -495,8 +503,8 @@ msgstr "लोकतन्त्रको शक्ति हो "
 msgid "People need truth, Our goal is stability"
 msgstr "मानिसहरूलाई सत्यता चाहिन्छ, हाम्रो लक्ष्य स्थिरता हो"
 
-#: frontend/templates/frontend/index.html:73 nkm/settings.py:166
-#: nkm/settings.py:167
+#: frontend/templates/frontend/index.html:73 nkm/settings.py:169
+#: nkm/settings.py:170
 msgid "Nagarik Unmukti Party"
 msgstr "नागरिक उन्मुक्ति पार्टी"
 
@@ -508,7 +516,8 @@ msgstr "हामी मिलेर राम्रो <br> भविष्य 
 msgid ""
 "Synonymous with glorious history, responsible present and a bright secure "
 "future."
-msgstr "गौरवमय इतिहास, जिम्मेवार वर्तमान र उज्यालो सुनिश्चित भविष्य’को पर्यायवाची।"
+msgstr ""
+"गौरवमय इतिहास, जिम्मेवार वर्तमान र उज्यालो सुनिश्चित भविष्य’को पर्यायवाची।"
 
 #: frontend/templates/frontend/index.html:83
 msgid ""
@@ -522,8 +531,8 @@ msgid ""
 "prosperous Nepal based on the ideas and culture of the epoch maker Resham "
 "Chaudhary"
 msgstr ""
-"रेशम चौधरीको विचार र संस्कारको जगमा समुन्नत नेपाल निर्माणका लागि दृढ अठोट राख्ने "
-"आन्दोलन हो नागरिक उन्मुक्ति पार्टी।"
+"रेशम चौधरीको विचार र संस्कारको जगमा समुन्नत नेपाल निर्माणका लागि दृढ अठोट "
+"राख्ने आन्दोलन हो नागरिक उन्मुक्ति पार्टी।"
 
 #: frontend/templates/frontend/index.html:104
 msgid "Vote Status"
@@ -636,8 +645,9 @@ msgid "280,366"
 msgstr "२८०,३६६"
 
 #: frontend/templates/frontend/index.html:392
-msgid "Latest Tweets"
-msgstr "नवीनतम ट्वीटहरू"
+#| msgid "Facebook"
+msgid "Top Facebook Posts"
+msgstr "शीर्ष फेसबुक पोस्टहरू"
 
 #: frontend/templates/frontend/member.html:39
 msgid "Become a Member "
@@ -651,11 +661,11 @@ msgstr "आवेदन दिनुहोस् र आज हामीसँ�
 msgid "Send Request"
 msgstr "अनुरोध पठाउने"
 
-#: nkm/settings.py:128
+#: nkm/settings.py:130
 msgid "Nepali"
 msgstr "नेपाली"
 
-#: nkm/settings.py:129
+#: nkm/settings.py:131
 msgid "English"
 msgstr "अंग्रेजी"
 
@@ -722,6 +732,9 @@ msgstr "नवीनतम सूचना"
 #: notice/templates/notice/post/sidebar.html:37
 msgid "Tags"
 msgstr "ट्यागहरू"
+
+#~ msgid "Latest Tweets"
+#~ msgstr "नवीनतम ट्वीटहरू"
 
 #~ msgid " Events"
 #~ msgstr "घटना"

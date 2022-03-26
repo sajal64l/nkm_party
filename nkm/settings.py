@@ -153,6 +153,7 @@ PARLER_DEFAULT_ACTIVATE = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = []
 
 
 # Default primary key field type

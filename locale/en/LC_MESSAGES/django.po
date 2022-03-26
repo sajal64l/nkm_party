@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-26 00:02+0545\n"
+"POT-Creation-Date: 2022-03-26 21:47+0545\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,11 +291,7 @@ msgid "666 888 000"
 msgstr ""
 
 #: frontend/templates/base.html:194
-msgid "22 Broklyn Street 30 Road. New "
-msgstr ""
-
-#: frontend/templates/base.html:194
-msgid " York United States"
+msgid " Nepal"
 msgstr ""
 
 #: frontend/templates/base.html:205
@@ -516,8 +512,8 @@ msgstr ""
 msgid "People need truth, Our goal is stability"
 msgstr ""
 
-#: frontend/templates/frontend/index.html:73 nkm/settings.py:169
-#: nkm/settings.py:170
+#: frontend/templates/frontend/index.html:73 nkm/settings.py:171
+#: nkm/settings.py:172
 msgid "Nagarik Unmukti Party"
 msgstr ""
 
@@ -647,7 +643,7 @@ msgid "Read More"
 msgstr ""
 
 #: frontend/templates/frontend/index.html:385
-msgid "Facebook"
+msgid "Followers"
 msgstr ""
 
 #: frontend/templates/frontend/index.html:386
